@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="school_list_view" model="ir.ui.view">
+        <field name="name">school_role.tree.view</field>
+        <field name="model">school.role</field>
+        <field name="arch" type="xml" >
+            <tree>
+                <field name="name" />
+                <field name="email" />
+                <field name="phone_no" />
+            </tree>
+        </field>
+    </record>
+
+<record id="school_form_view" model="ir.ui.view">
+        <field name="name">school_role.form.view</field>
+        <field name="model">school.role</field>
+        <field name="arch" type="xml" >
+            <form>
+
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="email" />
+                        <field name="phone_no" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_school_role" model="ir.actions.act_window">
+        <field name="name"> SCHOOL VIEW </field>
+        <field name="res_model">school.role</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="school_root_menu" name="School" sequence="3"/>
+    <menuitem id="school_sub_menu" name = "School Sub View" parent="school_root_menu"/>
+    <menuitem id="school_role_menu" action="action_school_role" parent="school_sub_menu"/>
+
+
+</odoo>
