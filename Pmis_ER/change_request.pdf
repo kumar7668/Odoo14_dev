@@ -1,0 +1,7605 @@
+Creator	"DbVis"
+Whatever	"Stuff"
+graph
+[
+	label	""
+	directed	1
+	node
+	[
+		id	0
+		graphics
+		[
+			x	638.8690221270522
+			y	4506.539821409651
+			w	395.0
+			h	741.71435546875
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"change_request"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4165.608913206526
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4165.608913206526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"project_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4183.859889769026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4183.859889769026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_no"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4202.110866331526
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4202.110866331526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"name"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4220.361842894026
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4220.361842894026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4238.612819456526
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4238.612819456526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"requested_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4256.863796019026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4256.863796019026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"approved_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4275.114772581526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4275.114772581526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"attach_cr_document_filename"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4293.365749144026
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4293.365749144026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_document_attachment_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4311.616725706526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4311.616725706526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_category"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4329.867702269026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4329.867702269026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_reason"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4348.118678831526
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4348.118678831526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"severity"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4366.369655394026
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4366.369655394026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"description"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4384.620631956526
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4384.620631956526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"planned_hours"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4402.871608519026
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4402.871608519026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"user_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4421.122585081526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4421.122585081526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"task_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4439.373561644026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4439.373561644026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"impact_on_project"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4457.624538206526
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4457.624538206526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"state"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4475.875514769026
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4475.875514769026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"closure_reason"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4494.126491331526
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4494.126491331526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_closure_requested_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4512.377467894026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4512.377467894026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_closed_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4530.628444456526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4530.628444456526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"rejected_reason"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4548.879421019026
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4548.879421019026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_closure_rejected_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4567.130397581526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4567.130397581526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"validated_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4585.381374144026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4585.381374144026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cancelled_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4603.632350706526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4603.632350706526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_request_to_close"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4621.883327269026
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4621.883327269026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_closure_rejected"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4640.134303831526
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4640.134303831526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_from_project"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4658.385280394026
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4658.385280394026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"closure_due_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4676.636256956526
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4676.636256956526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"message_main_attachment_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4694.887233519026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4694.887233519026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4713.138210081526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4713.138210081526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4731.389186644026
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4731.389186644026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4749.640163206526
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4749.640163206526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4767.891139769026
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4767.891139769026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"closure_rejected_reason"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4786.142116331526
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4786.142116331526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_rejected_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4804.393092894026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4804.393092894026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"approval_due_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4822.644069456526
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4822.644069456526
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"verified_by"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4840.895046019026
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4840.895046019026
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_cost"
+			fontSize	10
+			fontName	"Dialog"
+			x	465.3690221270522
+			y	4859.146022581526
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	618.3690221270522
+			y	4859.146022581526
+		]
+	]
+	node
+	[
+		id	1
+		graphics
+		[
+			x	1205.0
+			y	4809.087646484375
+			w	357.0
+			h	613.95751953125
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"ir_attachment"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1050.5
+			y	4532.03515625
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4532.03515625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"name"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1050.5
+			y	4550.2861328125
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4550.2861328125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"description"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4568.537109375
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4568.537109375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"res_model"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4586.7880859375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4586.7880859375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"res_field"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4605.0390625
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4605.0390625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"res_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4623.2900390625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4623.2900390625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"company_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4641.541015625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4641.541015625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"type"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1050.5
+			y	4659.7919921875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4659.7919921875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"url"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4678.04296875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING(1024)"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4678.04296875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"public"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4696.2939453125
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4696.2939453125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"access_token"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4714.544921875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4714.544921875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"db_datas"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4732.7958984375
+		]
+		LabelGraphics
+		[
+			text	"BYTEA"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4732.7958984375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"store_fname"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4751.046875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4751.046875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"file_size"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4769.2978515625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4769.2978515625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"checksum"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4787.548828125
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING(40)"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4787.548828125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"mimetype"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4805.7998046875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4805.7998046875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"index_content"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4824.05078125
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4824.05078125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4842.3017578125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4842.3017578125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4860.552734375
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4860.552734375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4878.8037109375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4878.8037109375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4897.0546875
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4897.0546875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"original_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4915.3056640625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4915.3056640625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4933.556640625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4933.556640625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"key"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4951.8076171875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4951.8076171875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"theme_template_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4970.05859375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4970.05859375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"document_type_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	4988.3095703125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	4988.3095703125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"project_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	5006.560546875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	5006.560546875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"contract_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	5024.8115234375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	5024.8115234375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"unsigned_contract_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	5043.0625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	5043.0625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"signed_contract_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	5061.3134765625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	5061.3134765625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"change_request_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	5079.564453125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	5079.564453125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"crossovered_budget_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1050.5
+			y	5097.8154296875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1165.5
+			y	5097.8154296875
+		]
+	]
+	node
+	[
+		id	2
+		graphics
+		[
+			x	608.0067808708063
+			y	3533.2945146254347
+			w	394.0
+			h	960.72607421875
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"project_project"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3082.8577470473097
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3082.8577470473097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"name"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3101.1087236098097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3101.1087236098097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"description"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3119.3597001723097
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3119.3597001723097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"active"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3137.6106767348097
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3137.6106767348097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sequence"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3155.8616532973097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3155.8616532973097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3174.1126298598097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3174.1126298598097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_email"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3192.3636064223097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3192.3636064223097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_phone"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3210.6145829848097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3210.6145829848097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"company_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3228.8655595473097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3228.8655595473097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"analytic_account_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3247.1165361098097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3247.1165361098097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"label_tasks"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3265.3675126723097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3265.3675126723097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"color"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3283.6184892348097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3283.6184892348097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"user_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3301.8694657973097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3301.8694657973097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"alias_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3320.1204423598097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3320.1204423598097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"privacy_visibility"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3338.3714189223097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3338.3714189223097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_start"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3356.6223954848097
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3356.6223954848097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3374.8733720473097
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3374.8733720473097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"subtask_project_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3393.1243486098097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3393.1243486098097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"allow_subtasks"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3411.3753251723097
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3411.3753251723097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"allow_recurring_tasks"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3429.6263017348097
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3429.6263017348097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"rating_request_deadline"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3447.8772782973097
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3447.8772782973097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"rating_active"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3466.1282548598097
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3466.1282548598097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"rating_status"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3484.3792314223097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3484.3792314223097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"rating_status_period"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3502.6302079848097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3502.6302079848097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"access_token"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3520.8811845473097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3520.8811845473097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"message_main_attachment_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3539.1321611098097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3539.1321611098097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3557.3831376723097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3557.3831376723097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3575.6341142348097
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3575.6341142348097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3593.8850907973097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3593.8850907973097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3612.1360673598097
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3612.1360673598097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sale_line_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3630.3870439223097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3630.3870439223097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sale_order_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3648.6380204848097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3648.6380204848097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"allow_timesheets"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3666.8889970473097
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3666.8889970473097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"bill_type"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3685.1399736098097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3685.1399736098097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"pricing_type"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3703.3909501723097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3703.3909501723097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"allow_billable"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3721.6419267348097
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3721.6419267348097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"timesheet_product_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3739.8929032973097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3739.8929032973097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"stage_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3758.1438798598097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3758.1438798598097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"start_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3776.3948564223097
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3776.3948564223097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"end_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3794.6458329848097
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3794.6458329848097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"street"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3812.8968095473097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3812.8968095473097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"street2"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3831.1477861098097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3831.1477861098097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"city_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3849.3987626723097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3849.3987626723097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sub_city_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3867.6497392348097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3867.6497392348097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"woreda_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3885.9007157973097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3885.9007157973097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"kabele_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3904.1516923598097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3904.1516923598097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"state_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3922.4026689223097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3922.4026689223097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"zip"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3940.6536454848097
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3940.6536454848097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"country_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3958.9046220473097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3958.9046220473097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"program_manager_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3977.1555986098097
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3977.1555986098097
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"risk_incident"
+			fontSize	10
+			fontName	"Dialog"
+			x	435.0067808708063
+			y	3995.4065751723097
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	587.0067808708063
+			y	3995.4065751723097
+		]
+	]
+	node
+	[
+		id	3
+		graphics
+		[
+			x	1205.0
+			y	3395.164794921875
+			w	394.0
+			h	1051.98095703125
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"project_task"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1032.0
+			y	2899.1005859375
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	2899.1005859375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"active"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	2917.3515625
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	2917.3515625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"name"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1032.0
+			y	2935.6025390625
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	2935.6025390625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"description"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	2953.853515625
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	2953.853515625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"priority"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	2972.1044921875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	2972.1044921875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sequence"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	2990.35546875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	2990.35546875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"stage_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3008.6064453125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3008.6064453125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"kanban_state"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1032.0
+			y	3026.857421875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3026.857421875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3045.1083984375
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3045.1083984375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3063.359375
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3063.359375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_end"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3081.6103515625
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3081.6103515625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_assign"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3099.861328125
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3099.861328125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_deadline"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3118.1123046875
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3118.1123046875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_last_stage_update"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3136.36328125
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3136.36328125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"project_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1032.0
+			y	3154.6142578125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3154.6142578125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"planned_hours"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3172.865234375
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3172.865234375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"user_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3191.1162109375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3191.1162109375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3209.3671875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3209.3671875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_email"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3227.6181640625
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3227.6181640625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_phone"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3245.869140625
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3245.869140625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"company_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1032.0
+			y	3264.1201171875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3264.1201171875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"color"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3282.37109375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3282.37109375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"displayed_image_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3300.6220703125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3300.6220703125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"parent_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3318.873046875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3318.873046875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"email_from"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3337.1240234375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3337.1240234375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"working_hours_open"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3355.375
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3355.375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"working_hours_close"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3373.6259765625
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3373.6259765625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"working_days_open"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3391.876953125
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3391.876953125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"working_days_close"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3410.1279296875
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3410.1279296875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"recurring_task"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3428.37890625
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3428.37890625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"recurrence_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3446.6298828125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3446.6298828125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"access_token"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3464.880859375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3464.880859375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"email_cc"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3483.1318359375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3483.1318359375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"message_main_attachment_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3501.3828125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3501.3828125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"rating_last_value"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3519.6337890625
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3519.6337890625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3537.884765625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3537.884765625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3556.1357421875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3556.1357421875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sale_order_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3574.38671875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3574.38671875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sale_line_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3592.6376953125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3592.6376953125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"remaining_hours"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3610.888671875
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3610.888671875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"effective_hours"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3629.1396484375
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3629.1396484375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"total_hours_spent"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3647.390625
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3647.390625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"progress"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3665.6416015625
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3665.6416015625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"overtime"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3683.892578125
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3683.892578125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"subtask_effective_hours"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3702.1435546875
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3702.1435546875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"timesheet_product_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3720.39453125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3720.39453125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"non_allow_billable"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3738.6455078125
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3738.6455078125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sequence_name"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3756.896484375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3756.896484375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_issue"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3775.1474609375
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3775.1474609375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_from_project"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3793.3984375
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3793.3984375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"issue_priority"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3811.6494140625
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3811.6494140625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3829.900390625
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3829.900390625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"resolved_date1"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3848.1513671875
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3848.1513671875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"incident_type"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3866.40234375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3866.40234375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"risk_incident"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3884.6533203125
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3884.6533203125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"risk_line"
+			fontSize	10
+			fontName	"Dialog"
+			x	1032.0
+			y	3902.904296875
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1184.0
+			y	3902.904296875
+		]
+	]
+	node
+	[
+		id	4
+		graphics
+		[
+			x	1700.9635974304065
+			y	3938.48716440684
+			w	394.0
+			h	1709.01611328125
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"res_partner"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3113.905377297465
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3113.905377297465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"name"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3132.156353859965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3132.156353859965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"company_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3150.407330422465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3150.407330422465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3168.658306984965
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3168.658306984965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"display_name"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3186.909283547465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3186.909283547465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3205.160260109965
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3205.160260109965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"title"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3223.411236672465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3223.411236672465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"parent_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3241.662213234965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3241.662213234965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"ref"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3259.913189797465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3259.913189797465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"lang"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3278.164166359965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3278.164166359965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"tz"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3296.415142922465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3296.415142922465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"user_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3314.666119484965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3314.666119484965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"vat"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3332.917096047465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3332.917096047465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3351.168072609965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3351.168072609965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"comment"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3369.419049172465
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3369.419049172465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"credit_limit"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3387.670025734965
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3387.670025734965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"active"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3405.921002297465
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3405.921002297465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"employee"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3424.171978859965
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3424.171978859965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"function"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3442.422955422465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3442.422955422465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"type"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3460.673931984965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3460.673931984965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"street"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3478.924908547465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3478.924908547465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"street2"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3497.175885109965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3497.175885109965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"zip"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3515.426861672465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3515.426861672465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"city"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3533.677838234965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3533.677838234965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"state_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3551.928814797465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3551.928814797465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"country_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3570.179791359965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3570.179791359965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_latitude"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3588.430767922465
+		]
+		LabelGraphics
+		[
+			text	"NUMERIC"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3588.430767922465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_longitude"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3606.681744484965
+		]
+		LabelGraphics
+		[
+			text	"NUMERIC"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3606.681744484965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"email"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3624.932721047465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3624.932721047465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"phone"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3643.183697609965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3643.183697609965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"mobile"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3661.434674172465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3661.434674172465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_company"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3679.685650734965
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3679.685650734965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"industry_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3697.936627297465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3697.936627297465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"color"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3716.187603859965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3716.187603859965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_share"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3734.438580422465
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3734.438580422465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"commercial_partner_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3752.689556984965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3752.689556984965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"commercial_company_name"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3770.940533547465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3770.940533547465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"company_name"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3789.191510109965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3789.191510109965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3807.442486672465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3807.442486672465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3825.693463234965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3825.693463234965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3843.944439797465
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3843.944439797465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"message_main_attachment_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3862.195416359965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3862.195416359965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"email_normalized"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3880.446392922465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3880.446392922465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"message_bounce"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3898.697369484965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3898.697369484965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"signup_token"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3916.948346047465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3916.948346047465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"signup_type"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3935.199322609965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3935.199322609965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"signup_expiration"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3953.450299172465
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3953.450299172465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"team_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3971.701275734965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3971.701275734965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_gid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	3989.952252297465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	3989.952252297465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"additional_info"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4008.203228859965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4008.203228859965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"phone_sanitized"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4026.454205422465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4026.454205422465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"debit_limit"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4044.705181984965
+		]
+		LabelGraphics
+		[
+			text	"NUMERIC"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4044.705181984965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"last_time_entries_checked"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4062.956158547465
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4062.956158547465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"invoice_warn"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4081.207135109965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4081.207135109965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"invoice_warn_msg"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4099.458111672465
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4099.458111672465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"supplier_rank"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4117.709088234965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4117.709088234965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"customer_rank"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4135.960064797465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4135.960064797465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sale_warn"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4154.211041359965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4154.211041359965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sale_warn_msg"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4172.462017922465
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4172.462017922465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"l10n_in_gst_treatment"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4190.712994484965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4190.712994484965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"l10n_in_shipping_gstin"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4208.963971047465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4208.963971047465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4227.214947609965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4227.214947609965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_published"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4245.465924172465
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4245.465924172465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"purchase_warn"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4263.716900734965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4263.716900734965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"purchase_warn_msg"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4281.967877297465
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4281.967877297465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"calendar_last_notif_ack"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4300.218853859965
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4300.218853859965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"city_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4318.469830422465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4318.469830422465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sub_city_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4336.720806984965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4336.720806984965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"woreda_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4354.971783547465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4354.971783547465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"kabele_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4373.222760109965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4373.222760109965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"employee_str"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4391.473736672465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4391.473736672465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"turnover"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4409.724713234965
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4409.724713234965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"year_of_establishment"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4427.975689797465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4427.975689797465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"picking_warn"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4446.226666359965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4446.226666359965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"picking_warn_msg"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4464.477642922465
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4464.477642922465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_localization"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4482.728619484965
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4482.728619484965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_meta_title"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4500.979596047465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4500.979596047465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_meta_description"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4519.230572609965
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4519.230572609965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_meta_keywords"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4537.481549172465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4537.481549172465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_meta_og_img"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4555.732525734965
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4555.732525734965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"seo_name"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4573.983502297465
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4573.983502297465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_description"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4592.234478859965
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4592.234478859965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_short_description"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4610.485455422465
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4610.485455422465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_weight"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4628.736431984965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4628.736431984965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"grade_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4646.987408547465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4646.987408547465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"grade_sequence"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4665.238385109965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4665.238385109965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"activation"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4683.489361672465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4683.489361672465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_partnership"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4701.740338234965
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4701.740338234965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_review"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4719.991314797465
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4719.991314797465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_review_next"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4738.242291359965
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4738.242291359965
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"assigned_partner_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4756.493267922465
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4756.493267922465
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"implemented_count"
+			fontSize	10
+			fontName	"Dialog"
+			x	1527.9635974304065
+			y	4774.744244484965
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1679.9635974304065
+			y	4774.744244484965
+		]
+	]
+	node
+	[
+		id	5
+		graphics
+		[
+			x	1205.0
+			y	4211.632080078125
+			w	388.0
+			h	540.95361328125
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"res_users"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1035.0
+			y	3971.08154296875
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	3971.08154296875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"active"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	3989.33251953125
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	3989.33251953125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"login"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1035.0
+			y	4007.58349609375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4007.58349609375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"password"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4025.83447265625
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4025.83447265625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"company_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1035.0
+			y	4044.08544921875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4044.08544921875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"partner_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1035.0
+			y	4062.33642578125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4062.33642578125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4080.58740234375
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4080.58740234375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"signature"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4098.83837890625
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4098.83837890625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"action_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4117.08935546875
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4117.08935546875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"share"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4135.34033203125
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4135.34033203125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4153.59130859375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4153.59130859375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4171.84228515625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4171.84228515625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4190.09326171875
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4190.09326171875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"totp_secret"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4208.34423828125
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4208.34423828125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"notification_type"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	1035.0
+			y	4226.59521484375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4226.59521484375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"odoobot_state"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4244.84619140625
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4244.84619140625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"odoobot_failed"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4263.09716796875
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4263.09716796875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sale_team_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4281.34814453125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4281.34814453125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"website_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4299.59912109375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4299.59912109375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"support_ticket_target_closed"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4317.85009765625
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4317.85009765625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"support_ticket_target_rating"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4336.10107421875
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4336.10107421875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"support_ticket_target_success"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4354.35205078125
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4354.35205078125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"chatter_position"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4372.60302734375
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4372.60302734375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"sidebar_visible"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4390.85400390625
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4390.85400390625
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"is_tendor_vendor"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4409.10498046875
+		]
+		LabelGraphics
+		[
+			text	"BOOLEAN"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4409.10498046875
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"target_sales_won"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4427.35595703125
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4427.35595703125
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"target_sales_done"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4445.60693359375
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4445.60693359375
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"target_sales_invoiced"
+			fontSize	10
+			fontName	"Dialog"
+			x	1035.0
+			y	4463.85791015625
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	1181.0
+			y	4463.85791015625
+		]
+	]
+	node
+	[
+		id	6
+		graphics
+		[
+			x	166.5
+			y	3782.177208533654
+			w	209.0
+			h	66.42822265625
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"change_request_res_users_rel"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"change_request_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	86.0
+			y	3778.889366736779
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	186.0
+			y	3778.889366736779
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"res_users_id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	86.0
+			y	3797.140343299279
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	186.0
+			y	3797.140343299279
+		]
+	]
+	node
+	[
+		id	7
+		graphics
+		[
+			x	166.5
+			y	3631.870567908654
+			w	333.0
+			h	194.18505859375
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"close_cr_wizard"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	24.0
+			y	3564.704308143029
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3564.704308143029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"closure_reason"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3582.955284705529
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3582.955284705529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"closure_due_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3601.206261268029
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3601.206261268029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3619.457237830529
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3619.457237830529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3637.708214393029
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3637.708214393029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3655.959190955529
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3655.959190955529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3674.210167518029
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3674.210167518029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3692.461144080529
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3692.461144080529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"user_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	24.0
+			y	3710.712120643029
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	115.0
+			y	3710.712120643029
+		]
+	]
+	node
+	[
+		id	8
+		graphics
+		[
+			x	166.5
+			y	3941.609337439904
+			w	318.0
+			h	212.43603515625
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"cr_task"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	31.5
+			y	3865.317589393029
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3865.317589393029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"date_deadline"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	3883.568565955529
+		]
+		LabelGraphics
+		[
+			text	"DATE"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3883.568565955529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"planned_hours"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	3901.819542518029
+		]
+		LabelGraphics
+		[
+			text	"DOUBLE PRECISION"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3901.819542518029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"user_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	3920.070519080529
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3920.070519080529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	3938.321495643029
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3938.321495643029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	3956.572472205529
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3956.572472205529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	3974.823448768029
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3974.823448768029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	3993.074425330529
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	3993.074425330529
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	4011.325401893029
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	4011.325401893029
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"project_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	31.5
+			y	4029.576378455529
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	107.5
+			y	4029.576378455529
+		]
+	]
+	node
+	[
+		id	9
+		graphics
+		[
+			x	166.5
+			y	3435.936485877404
+			w	327.0
+			h	157.68310546875
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"reject_cr_wizard"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	27.0
+			y	3387.021202674279
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	112.0
+			y	3387.021202674279
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"rejection_reason"
+			fontSize	10
+			fontName	"Dialog"
+			x	27.0
+			y	3405.272179236779
+		]
+		LabelGraphics
+		[
+			text	"TEXT"
+			fontSize	10
+			fontName	"Dialog"
+			x	112.0
+			y	3405.272179236779
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"cr_id"
+			fontSize	10
+			fontName	"Dialog"
+			x	27.0
+			y	3423.523155799279
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	112.0
+			y	3423.523155799279
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	27.0
+			y	3441.774132361779
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	112.0
+			y	3441.774132361779
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	27.0
+			y	3460.025108924279
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	112.0
+			y	3460.025108924279
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	27.0
+			y	3478.276085486779
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	112.0
+			y	3478.276085486779
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	27.0
+			y	3496.527062049279
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	112.0
+			y	3496.527062049279
+		]
+	]
+	node
+	[
+		id	10
+		graphics
+		[
+			x	617.1912919343326
+			y	2898.8568957789635
+			w	305.0
+			h	139.43212890625
+			customconfiguration	"TableNodeWithSelectionColor"
+			fill	"#FFFFCC"
+			outline	"#808080"
+		]
+		LabelGraphics
+		[
+			text	"cr_category"
+			fontSize	13
+			fontStyle	"bold"
+			fontName	"Dialog"
+			anchor	"t"
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"id"
+			fontSize	10
+			fontStyle	"bold"
+			fontName	"Dialog"
+			x	488.69129193433264
+			y	2859.0671008570885
+		]
+		LabelGraphics
+		[
+			text	"SERIAL"
+			fontSize	10
+			fontName	"Dialog"
+			x	551.6912919343326
+			y	2859.0671008570885
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"name"
+			fontSize	10
+			fontName	"Dialog"
+			x	488.69129193433264
+			y	2877.3180774195885
+		]
+		LabelGraphics
+		[
+			text	"CHARACTER VARYING"
+			fontSize	10
+			fontName	"Dialog"
+			x	551.6912919343326
+			y	2877.3180774195885
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	488.69129193433264
+			y	2895.5690539820885
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	551.6912919343326
+			y	2895.5690539820885
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"create_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	488.69129193433264
+			y	2913.8200305445885
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	551.6912919343326
+			y	2913.8200305445885
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_uid"
+			fontSize	10
+			fontName	"Dialog"
+			x	488.69129193433264
+			y	2932.0710071070885
+		]
+		LabelGraphics
+		[
+			text	"INTEGER"
+			fontSize	10
+			fontName	"Dialog"
+			x	551.6912919343326
+			y	2932.0710071070885
+		]
+		LabelGraphics
+		[
+		]
+		LabelGraphics
+		[
+			text	"write_date"
+			fontSize	10
+			fontName	"Dialog"
+			x	488.69129193433264
+			y	2950.3219836695885
+		]
+		LabelGraphics
+		[
+			text	"TIMESTAMP(6) WITHOUT TIME ZONE"
+			fontSize	10
+			fontName	"Dialog"
+			x	551.6912919343326
+			y	2950.3219836695885
+		]
+	]
+	edge
+	[
+		source	6
+		target	0
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	166.5
+					y	3782.177208533654
+				]
+				point
+				[
+					x	370.0
+					y	3786.014855018029
+				]
+				point
+				[
+					x	370.0
+					y	4172.734401487776
+				]
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.11554265022277832
+			xTarget	-1.0
+			yTarget	-0.9000915884971619
+		]
+	]
+	edge
+	[
+		source	7
+		target	0
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	166.5
+					y	3631.870567908654
+				]
+				point
+				[
+					x	350.0
+					y	3626.582726111779
+				]
+				point
+				[
+					x	350.0
+					y	4172.734401487776
+				]
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.05446188151836395
+			xTarget	-1.0
+			yTarget	-0.9000915884971619
+		]
+	]
+	edge
+	[
+		source	8
+		target	0
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	166.5
+					y	3941.609337439904
+				]
+				point
+				[
+					x	340.0
+					y	3945.446983924279
+				]
+				point
+				[
+					x	340.0
+					y	4172.734401487776
+				]
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.0361299030482769
+			xTarget	-1.0
+			yTarget	-0.9000915884971619
+		]
+	]
+	edge
+	[
+		source	1
+		target	0
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	1205.0
+					y	4809.087646484375
+				]
+				point
+				[
+					x	1510.0
+					y	5086.68994140625
+				]
+				point
+				[
+					x	1510.0
+					y	5130.0
+				]
+				point
+				[
+					x	320.0
+					y	5130.0
+				]
+				point
+				[
+					x	320.0
+					y	4172.734401487776
+				]
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.904304563999176
+			xTarget	-1.0
+			yTarget	-0.9000915884971619
+		]
+	]
+	edge
+	[
+		source	9
+		target	0
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	166.5
+					y	3435.936485877404
+				]
+				point
+				[
+					x	390.0
+					y	3430.648644080529
+				]
+				point
+				[
+					x	390.0
+					y	4172.734401487776
+				]
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.06706922501325607
+			xTarget	-1.0
+			yTarget	-0.9000915884971619
+		]
+	]
+	edge
+	[
+		source	0
+		target	1
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	960.0
+					y	4318.742213987776
+				]
+				point
+				[
+					x	960.0
+					y	4539.16064453125
+				]
+				point
+				[
+					x	1205.0
+					y	4809.087646484375
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.5063879489898682
+			xTarget	-1.0
+			yTarget	-0.879301905632019
+		]
+	]
+	edge
+	[
+		source	0
+		target	1
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	940.0
+					y	4702.012721800276
+				]
+				point
+				[
+					x	940.0
+					y	4539.16064453125
+				]
+				point
+				[
+					x	1205.0
+					y	4809.087646484375
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.5270840525627136
+			xTarget	-1.0
+			yTarget	-0.879301905632019
+		]
+	]
+	edge
+	[
+		source	0
+		target	3
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	980.0
+					y	4446.499049925276
+				]
+				point
+				[
+					x	980.0
+					y	2906.22607421875
+				]
+				point
+				[
+					x	1205.0
+					y	3395.164794921875
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.16189728677272797
+			xTarget	-1.0
+			yTarget	-0.9295580983161926
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	880.0
+					y	4610.757838987776
+				]
+				point
+				[
+					x	880.0
+					y	4470.0
+				]
+				point
+				[
+					x	990.0
+					y	4470.0
+				]
+				point
+				[
+					x	990.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.28101927042007446
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	860.0
+					y	4537.753932737776
+				]
+				point
+				[
+					x	860.0
+					y	4460.0
+				]
+				point
+				[
+					x	1000.0
+					y	4460.0
+				]
+				point
+				[
+					x	1000.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.0841674730181694
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	850.0
+					y	4574.255885862776
+				]
+				point
+				[
+					x	850.0
+					y	4390.0
+				]
+				point
+				[
+					x	970.0
+					y	4390.0
+				]
+				point
+				[
+					x	970.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.18259337544441223
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	870.0
+					y	4519.502956175276
+				]
+				point
+				[
+					x	870.0
+					y	4420.0
+				]
+				point
+				[
+					x	930.0
+					y	4420.0
+				]
+				point
+				[
+					x	930.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.03495452180504799
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	950.0
+					y	4811.518581175276
+				]
+				point
+				[
+					x	950.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.8223617672920227
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	890.0
+					y	4720.263698362776
+				]
+				point
+				[
+					x	890.0
+					y	4430.0
+				]
+				point
+				[
+					x	940.0
+					y	4430.0
+				]
+				point
+				[
+					x	940.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.5762969851493835
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	860.0
+					y	4428.248073362776
+				]
+				point
+				[
+					x	860.0
+					y	4300.0
+				]
+				point
+				[
+					x	960.0
+					y	4300.0
+				]
+				point
+				[
+					x	960.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.21111023426055908
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	960.0
+					y	4592.506862425276
+				]
+				point
+				[
+					x	960.0
+					y	4890.0
+				]
+				point
+				[
+					x	430.0
+					y	4890.0
+				]
+				point
+				[
+					x	430.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.23180632293224335
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	5
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	990.0
+					y	4756.765651487776
+				]
+				point
+				[
+					x	990.0
+					y	4900.0
+				]
+				point
+				[
+					x	420.0
+					y	4900.0
+				]
+				point
+				[
+					x	420.0
+					y	3978.20703125
+				]
+				point
+				[
+					x	1205.0
+					y	4211.632080078125
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.6747229099273682
+			xTarget	-1.0
+			yTarget	-0.8630132079124451
+		]
+	]
+	edge
+	[
+		source	0
+		target	2
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	850.0
+					y	4190.985378050276
+				]
+				point
+				[
+					x	850.0
+					y	3040.0
+				]
+				point
+				[
+					x	320.0
+					y	3040.0
+				]
+				point
+				[
+					x	320.0
+					y	3089.9832353285597
+				]
+				point
+				[
+					x	608.0067808708063
+					y	3533.2945146254347
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.8508785963058472
+			xTarget	-1.0
+			yTarget	-0.9228671789169312
+		]
+	]
+	edge
+	[
+		source	0
+		target	10
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	870.0
+					y	4336.993190550276
+				]
+				point
+				[
+					x	870.0
+					y	3010.0
+				]
+				point
+				[
+					x	310.0
+					y	3010.0
+				]
+				point
+				[
+					x	310.0
+					y	2866.1925891383385
+				]
+				point
+				[
+					x	617.1912919343326
+					y	2898.8568957789635
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.45717501640319824
+			xTarget	-1.0
+			yTarget	-0.4685334265232086
+		]
+	]
+	edge
+	[
+		source	0
+		target	4
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	910.0
+					y	4282.240260862776
+				]
+				point
+				[
+					x	910.0
+					y	2860.0
+				]
+				point
+				[
+					x	1450.0
+					y	2860.0
+				]
+				point
+				[
+					x	1450.0
+					y	3121.030865578715
+				]
+				point
+				[
+					x	1700.9635974304065
+					y	3938.48716440684
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.6048138737678528
+			xTarget	-1.0
+			yTarget	-0.9566396474838257
+		]
+	]
+	edge
+	[
+		source	0
+		target	4
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	900.0
+					y	4263.989284300276
+				]
+				point
+				[
+					x	900.0
+					y	2850.0
+				]
+				point
+				[
+					x	1480.0
+					y	2850.0
+				]
+				point
+				[
+					x	1480.0
+					y	3121.030865578715
+				]
+				point
+				[
+					x	1700.9635974304065
+					y	3938.48716440684
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	-0.6540268063545227
+			xTarget	-1.0
+			yTarget	-0.9566396474838257
+		]
+	]
+	edge
+	[
+		source	0
+		target	4
+		graphics
+		[
+			fill	"#808080"
+			targetArrow	"standard"
+			Line
+			[
+				point
+				[
+					x	638.8690221270522
+					y	4506.539821409651
+				]
+				point
+				[
+					x	1020.0
+					y	4848.020534300276
+				]
+				point
+				[
+					x	1020.0
+					y	4490.0
+				]
+				point
+				[
+					x	1430.0
+					y	4490.0
+				]
+				point
+				[
+					x	1430.0
+					y	3121.030865578715
+				]
+				point
+				[
+					x	1700.9635974304065
+					y	3938.48716440684
+				]
+			]
+		]
+		edgeAnchor
+		[
+			xSource	1.0
+			ySource	0.9207876324653625
+			xTarget	-1.0
+			yTarget	-0.9566396474838257
+		]
+	]
+]
