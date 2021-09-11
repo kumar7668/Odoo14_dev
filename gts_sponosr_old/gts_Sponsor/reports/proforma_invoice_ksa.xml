@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sale_preforma_invoice_ksa">
+
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="doc">
+
+                <style>
+                    th, td {
+                    font-size: 10pt;
+                    }
+                </style>
+                <div class="page">
+                    <h1 style="text-align : center;">Proforma Invoice</h1>
+                    <table class="table" style="text-align:left;font-size:19px;margin-bottom: 0px;">
+                        <tr>
+                            <td colspan="4">
+
+                                    <b>اسم العميل
+                                    </b>
+                                <span t-field="doc.partner_id.name"/><br/>
+                                <b>اسم الشركة</b>
+                                <span t-field="doc.company_id.name"/><br/>
+                                <b>عنوان العميل</b>
+                                <t t-if="doc.partner_id.street">
+                                    <span t-field="doc.partner_id.street"/>
+                                </t>
+                                <t t-if="doc.partner_id.street2">
+                                    <span t-field="doc.partner_id.street2"/>
+                                </t>
+                                <br/>
+                                <span t-if="doc.partner_id.city" t-field="doc.partner_id.city"/>&amp;nbsp;&amp;nbsp;
+                                &amp;nbsp;&amp;nbsp;<span t-if="doc.partner_id.zip" t-field="doc.partner_id.zip"/>&amp;nbsp;&amp;nbsp;
+                                &amp;nbsp;&amp;nbsp;
+                                <span t-if="doc.partner_id.country_id" t-field="doc.partner_id.country_id.name"/>
+                                <br/>
+                                <span t-if="doc.partner_id.state_id"
+                                      t-field="doc.partner_id.state_id.name"/>
+                                <br/>
+                                <b> الهاتف العميل</b>
+                                <span t-if="doc.partner_id.phone"
+                                      t-field="doc.partner_id.phone"/>
+                                <br/>
+                                <b>بريد العميل</b>
+                                <span t-if="doc.partner_id.state_id" t-field="doc.partner_id.vat"/><br/>
+                                <b>الرقم الضريبي للعميل</b>
+                                <span t-field="doc.partner_id.vat"/>
+
+                                <br/>
+                                <b>رقم أمر الشراء</b>
+
+                            </td>
+                            <td colspan="4" align="left">
+                                <br>
+                                    <b>
+                                        <span>تاريخ أسعار</span>
+                                    </b>
+                                    <span t-field="doc.date_order" t-options='{"format": "dd/MM/yyyy"}'/>
+                                </br>
+                                <br/>
+                                <span>
+                                    <b>الفاتورة الأولية</b>
+                                </span>
+                                <br/>
+                                <span><b>إنكوترمز</b></span>
+                                <br/>
+                                <span><b>طريقة الدفع</b></span>
+                                <br/>
+                                <span><b>عملة</b></span>
+                                <br/>
+                                <span><b>اسم مندوب المبيعات</b></span>
+                                <br/>
+                                <span><b>جهة اتصال مندوب المبيعات</b></span>
+                                <br/>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <br/>
+                    <br/>
+                    <div>
+                        <table class="table table-bordered" style="border-style: solid;
+                    border-width: 1px;">
+                            <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                            <thead style="display: table-row-group">
+                                <tr>
+                                    <th name="th_sr_no" class="text-center">
+                                        <b>التسلسل<br/>
+                                        </b>
+                                    </th>
+
+                                    <th colspan="2" name="th_description" class="text-center">
+                                        <b>رقم القطعة/البيان/مواصفات
+                                        </b>
+                                    </th>
+                                    <th name="th_size" class="text-center">
+                                        <b>كود مخزون العميل</b>
+                                    </th>
+                                    <th name="th_party's_item_code" class="text-center">
+                                        <b>تاريخ التسليم او الوصول</b>
+                                    </th>
+                                    <th name="th_upl_item_code" class="text-center">
+                                        <b>العدد
+                                        </b>
+                                    </th>
+                                    <th name="th_quantity" class="text-center">
+                                        <b>الواحدة</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>  سعر الواحدة </b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>% خصم  </b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>  % ضريبة </b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>  سعر الواحدة بعد الخصم</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>السعر اجمالي بدون ضريبة</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>السعر الكلي</b>
+                                    </th>
+
+                                </tr>
+                            </thead>
+
+                        </table>
+                        <div>
+                            <b>Total Amount:
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>الحد الأدنى لرسوم الطلب
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>صافي المبلغ في الكلم
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+
+                        <div>
+                            <b> إجمالي الخصم
+
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>شحن
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+                        <div>
+                            <b>رسوم التعبئة والتغليف
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+                        <div>
+                            <b>إجمالي ضريبة القيمة المضافة
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+                        <div>
+                            <b>تم استلام الدفعة
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>استحقاق الدفع
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+
+                        <div>
+                            <b>الدفع المتبقي
+                                <!--                            <span t-field="doc.currency_id.name"/>&#160;<span style="font-size:10pt;" t-esc="doc.num_to_word()"/>-->
+                            </b>
+                        </div>
+                        <br/>
+                        <footer>
+                            <div class="oe_structure"/>
+                            <p>Terms and Conditions
+                                <br/>
+                                موقع التسليم
+                            </p>
+                            <p>
+                                <b>Kindly keep balance payment ready as per the agreed payment terms</b>
+                            </p>
+                            <p>
+                                <b>Advicing Bank Details</b>
+                                <br/>
+                                <b>Beneficiary name</b>
+                                <br/>
+                                <b>Bank</b>
+                                <br/>
+                                <b>Account Number</b>
+                                <br/>
+                                <b>Swift Code</b>
+                                <br/>
+                                <b>IFSC Code</b>
+                            </p>
+                        </footer>
+                    </div>
+                </div>
+            </t>
+            </t>
+    </template>
+</odoo>

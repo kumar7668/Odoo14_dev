@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_res_user_form_inherit" model="ir.ui.view">
+        <field name="name">res_users.inherit</field>
+        <field name="model">res.users</field>
+
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <field name="notification_type" position="before">
+
+                <field name="user_email_ids" widget='one2many' width="100" >
+                    <tree string="tree" editable="bottom">
+<!--                            <field name="user_id"/>-->
+                            <field name="company_name_id"/>
+                            <field name="email_id"/>
+                    </tree>
+                </field>
+
+                </field>
+            </field>
+
+    </record>
+
+</odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.inherit</field>
+        <field name="model">res.partner</field>
+
+        <field name="inherit_id" ref="account.view_partner_property_form"/>
+        <field name="arch" type="xml">
+            <field name="property_supplier_payment_term_id" position="before">
+                <field name="is_sponsor"/>
+            </field>
+        </field>
+    </record>
+
+
+
+<!--    added menu in purchase -->
+      <record id="action_sponsor_menu_detail" model="ir.actions.act_window">
+        <field name="name">Sponsor Detail</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">res.partner</field>
+        <field name="view_mode">tree,form</field>
+        <field name="domain">[('is_sponsor','=',True)]</field>
+        <field name="context">{'delete': False, 'default_is_sponsor':True}</field>
+    </record>
+
+    <menuitem
+            id="action_sponsor_menuitem_detail"
+            action="action_sponsor_menu_detail"
+            name="Sponsor "
+            parent="purchase.menu_procurement_management"
+            sequence="103"/>
+
+
+
+
+
+
+
+
+</odoo>

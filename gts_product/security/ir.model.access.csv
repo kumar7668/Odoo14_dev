@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_master_detail,master.detail,model_master_detail,,1,1,1,1
+access_customer_tag,customer.tag,model_customer_tag,,1,1,1,1

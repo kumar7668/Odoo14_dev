@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="stock_report_delivery_document_inherit12" inherit_id="stock.report_delivery_document" >
+        <xpath expr="//t[@t-call='web.external_layout']" position="replace">
+            <t t-call="web.basic_layout">
+                <style>
+                    th, td {
+                    font-size: 10pt;
+                    }
+                </style>
+                <div class="page">
+                    <h1 style="text-align : center;">Delivery Note</h1>
+                    <table class="table" style="text-align:left;font-size:19px;margin-bottom: 0px;">
+                        <tr>
+                            <td width="15%">
+
+                                    <b>Name:
+                                    </b><br/>
+<!--                                <span t-field="o.partner_id.name"/><br/>-->
+                                <b>Company</b><br/>
+<!--                                <span t-field="o.company_id.name"/><br/>-->
+                                <b>Address:</b><br/><br/>
+
+                                <b>Tel No:</b>
+
+                                <br/>
+                                <b>E.mail</b>
+                                <br/>
+                                <b>Customer Vat:</b>
+<!--                                <span t-field="o.partner_id.vat"/>-->
+
+                                <br/>
+                                <b>Cust Po Ref:</b>
+
+                            </td>
+
+                            <td width="40%" style="text-align:left;">
+                                <span t-field="o.partner_id.name"/><br/>
+                                <span t-field="o.company_id.name"/><br/>
+                                <span t-if="o.partner_id.street" t-field="o.partner_id.street"/>
+												<span t-if="o.partner_id.street2" t-field="o.partner_id.street2"/>
+												<span t-if="o.partner_id.city" t-field="o.partner_id.city"/>
+												<span t-if="o.partner_id.state_id" t-field="o.partner_id.state_id.name"/><br/>
+												<span t-if="o.partner_id.country_id" t-field="o.partner_id.country_id.name"/>
+												<span t-if="o.partner_id.zip" t-field="o.partner_id.zip"/>
+												<br/>
+                                <span t-if="o.partner_id.phone"
+                                      t-field="o.partner_id.phone"/><br/>
+                                <span t-if="o.partner_id.state_id" t-field="o.partner_id.vat"/><br/>
+                                <span t-field="o.partner_id.vat"/><br/>
+
+
+
+                            </td>
+                            <td width="20%" style="text-align:left;">
+
+                                    <b>
+                                        <span>Date:</span>
+                                    </b>
+<!--                                    <span t-field="o.date_order" t-options='{"format": "dd/MM/yyyy"}'/>-->
+
+                                <br/>
+                                <span>
+                                    <b>Delivery No</b>
+                                </span>
+                                <br/>
+                                <span><b>Mode of transport</b></span>
+                                <br/>
+                                <span><b>Final destination</b></span>
+                                <br/>
+                                <span><b>Delivery Person Name</b></span>
+                                <br/>
+                                <span><b>Delivery Person Contact</b></span>
+                                <br/>
+
+                            </td>
+                            <td width="35" style="text-align:left;">
+                                <span t-field="o.scheduled_date" t-options='{"format": "dd/MM/yyyy"}'/>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <div>
+                        <table class="table table-bordered" style="border-style: solid;
+                    border-width: 1px;">
+                            <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                            <thead style="display: table-row-group">
+                                <tr>
+                                    <th name="th_sr_no" class="text-center">
+                                        <b>Sr.<br/>No.
+                                        </b>
+                                    </th>
+
+                                    <th colspan="2" name="th_description" class="text-center">
+                                        <b>Packing Name
+                                        </b>
+                                    </th>
+                                    <th name="th_size" class="text-center">
+                                        <b> content</b>
+                                    </th>
+                                    <th name="th_party's_item_code" class="text-center">
+                                        <b>No. of Cartons</b>
+                                    </th>
+                                    <th name="th_upl_item_code" class="text-center">
+                                        <b>Weight
+                                        </b>
+                                    </th>
+                                    <th name="th_quantity" class="text-center">
+                                        <b>Dimensions</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>Packing Type</b>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="sr_no" t-value="0"/>
+                            <t t-foreach="o.move_ids_without_package" t-as="line">
+                                    <t t-set="sr_no" t-value="sr_no+1"/>
+                                <tr>
+                                    <td>
+                                        <span t-esc="sr_no"/>
+                                    </td>
+                                    <td colspan="2">
+                                        <span t-field="line.product_id.name"/>
+                                    </td>
+                                    <td>
+<!--                                        <span t-field="line.product_id.name"/>-->
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td>
+
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+                            </t>
+
+
+                            </tbody>
+</table>
+
+<!--                        <table class="table" style="text-align:left;font-size:19px;margin-bottom: 0px;border:none;">-->
+                           <table width="100%" style="text-align:left;font-size:19px;margin-bottom: 0px;border:none;">
+                            <tr width="100%">
+                                <td width="20%">
+                                   <b>No. of Package
+                            </b>
+                                </td>
+                                <td width="80%">
+                                    5
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+                        <br/>
+                            <div class="oe_structure"/>
+                            <p>Terms and Conditions
+                                <br/>
+                                Delivery Location
+                            </p>
+                            <div class="mt32 ml64 mr4" name="signature">
+                            <div class="offset-8" style="text-align:center">
+                                <br/>
+                                <strong>Authorized Signatory</strong>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>
+

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="mro_indian_tax_invoice_report">
+        <t t-call="web.basic_layout">
+            <t t-foreach="docs" t-as="doc">
+                <div class="page">
+                    <h1 style="text-align : center;">Tax Invoice</h1>
+                    <table class="table" style="text-align:left;font-size:19px;margin-bottom: 0px;">
+                        <tr>
+                            <td width="15%">
+                                    <b>Name:
+                                    </b><br/>
+                                <b>Company</b><br/>
+                                <b>Address:</b><br/><br/>
+                                <b>Tel No:</b>
+                                <br/>
+                                <b>E.mail</b>
+                                <br/>
+                                <b>Customer Vat:</b>
+                                <span t-field="doc.partner_id.vat"/>
+                                <br/>
+                                <b>Cust Po Ref:</b>
+                            </td>
+                            <td width="40%" style="text-align:left;">
+                                <span t-field="doc.partner_id.name"/><br/>
+                                <span t-field="doc.company_id.name"/><br/>
+                                <span t-if="doc.partner_id.street" t-field="doc.partner_id.street"/>
+												<span t-if="doc.partner_id.street2" t-field="doc.partner_id.street2"/>
+												<span t-if="doc.partner_id.city" t-field="doc.partner_id.city"/>
+												<span t-if="doc.partner_id.state_id" t-field="doc.partner_id.state_id.name"/><br/>
+												<span t-if="doc.partner_id.country_id" t-field="doc.partner_id.country_id.name"/>
+												<span t-if="doc.partner_id.zip" t-field="doc.partner_id.zip"/>
+												<br/>
+                                <span t-if="doc.partner_id.phone"
+                                      t-field="doc.partner_id.phone"/><br/>
+                                <span t-if="doc.partner_id.state_id" t-field="doc.partner_id.vat"/><br/>
+                                <span t-field="doc.partner_id.vat"/><br/>
+                            </td>
+                            <td width="20%" style="text-align:left;">
+                                    <b>
+                                        <span>Date:</span>
+                                    </b>
+                                <br/>
+                                <span>
+                                    <b>Proforma Invoice No:</b>
+                                </span>
+                                <br/>
+                                <span><b>Incoterms:</b></span>
+                                <br/>
+                                <span><b>Terms of Payment:</b></span>
+                                <br/>
+                                <span><b>Currency</b></span>
+                                <br/>
+                                <span><b>Sales Person Name</b></span>
+                                <br/>
+                                <span><b>Sales Person Contact</b></span>
+                                <br/>
+
+                            </td>
+                            <td width="35" style="text-align:left;">
+                                <span t-field="doc.date_order" t-options='{"format": "dd/MM/yyyy"}'/>
+
+                            </td>
+                        </tr>
+                    </table>
+                    <br/>
+                    <div>
+                        <table class="table table-bordered" style="border-style: solid;
+                    border-width: 1px;">
+                            <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                            <thead style="display: table-row-group">
+                                <tr>
+                                    <th name="th_sr_no" class="text-center">
+                                        <b>Sr.<br/>No.
+                                        </b>
+                                    </th>
+
+                                    <th colspan="2" name="th_description" class="text-center">
+                                        <b>Part Number/Description/Alternate/Specifications/Country of Origin/HS CODE
+                                        </b>
+                                    </th>
+                                    <th name="th_size" class="text-center">
+                                        <b>Customer Stock Number</b>
+                                    </th>
+                                    <th name="th_party's_item_code" class="text-center">
+                                        <b>Delivery date</b>
+                                    </th>
+                                    <th name="th_upl_item_code" class="text-center">
+                                        <b>QTY
+                                        </b>
+                                    </th>
+                                    <th name="th_quantity" class="text-center">
+                                        <b>UOM</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>Unit Price</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>Discount %</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>TAX %</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>U.Price Aft. Discount</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>Total Price W/o TAX</b>
+                                    </th>
+                                    <th name="th_priceunit" class="text-center">
+                                        <b>Total Price</b>
+                                    </th>
+
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <t t-set="sr_no" t-value="0"/>
+                            <t t-foreach="doc.order_line" t-as="line">
+                                    <t t-set="sr_no" t-value="sr_no+1"/>
+                                <tr>
+                                    <td>
+                                        <span t-esc="sr_no"/>
+                                    </td>
+                                    <td colspan="2">
+                                        <span t-field="line.name"/>
+                                    </td>
+
+                                    <td>
+<!--                                        <span t-field="line.product_id.name"/>-->
+                                    </td>
+
+                                                                        <td></td>
+
+                                    <td>
+                                        <span t-field="line.product_uom_qty"/>
+                                    </td>
+                                    <td>
+<!--                                        <span t-field="line.product_id.name"/>-->
+                                    </td>
+                                    <td>
+                                        <span t-field="line.price_unit"/>
+                                    </td>
+                                    <td>
+<!--                                        <span t-field="line.product_id.name"/>-->
+                                    </td>
+                                    <td>
+                                        <span t-field="line.tax_id.name"/>
+                                    </td>
+                                    <td>
+<!--                                        <span t-field="line.product_id.name"/>-->
+                                    </td>
+                                    <td>
+<!--                                        <span t-field="line.product_id.name"/>-->
+                                    </td>
+                                    <td>
+
+                                    </td>
+<!--                                    <td></td>-->
+
+                                </tr>
+                            </t>
+
+
+                            </tbody>
+</table>
+
+<!--                        <table class="table" style="text-align:left;font-size:19px;margin-bottom: 0px;border:none;">-->
+                           <table width="100%" style="text-align:left;font-size:19px;margin-bottom: 0px;border:none;">
+                            <tr width="100%">
+                                <td width="15%">
+                                   <b>Minimum Order Charge
+                            </b><br/>
+                                    <b>Net Amt in words
+                            </b><br/>
+                                    <b>Total Discount
+                            </b><br/>
+                                    <b>FRIEGHT
+                            </b><br/>
+                                    <b>Packaging charges
+                            </b>
+                                </td>
+                                <td width="40%">
+
+                                </td>
+                                <td width="20%">
+                                    <b>TAX Total
+                            </b><br/>
+                                    <b>Payment received
+                            </b><br/>
+                                    <b>Payment due
+                            </b><br/>
+                                    <b>Balance payment
+                            </b>
+                                </td>
+                                <td width="35%">
+
+                                </td>
+                            </tr>
+                        </table>
+
+
+
+                        <br/>
+                        <footer>
+                            <div class="oe_structure"/>
+                            <p>Terms and Conditions
+                                <br/>
+                                Delivery Location
+                            </p>
+                            <p>
+                                <b>Kindly keep balance payment ready as per the agreed payment terms</b>
+                            </p>
+                            <p>
+                                <b>Advicing Bank Details</b>
+                                <br/>
+                                <b>Beneficiary name</b>
+                                <br/>
+                                <b>Bank</b>
+                                <br/>
+                                <b>Account Number</b>
+                                <br/>
+                                <b>Swift Code</b>
+                                <br/>
+                                <b>IFSC Code</b>
+                            </p>
+                        </footer>
+                    </div>
+
+                </div>
+            </t>
+        </t>
+    </template>
+</odoo>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<odoo>
+    <record id="sponsor_list_view" model="ir.ui.view">
+        <field name="name">sponsor.tree_view</field>
+        <field name="model">sponsor.detail</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="sponsor_id"/>
+                <field name="order_id"/>
+                <field name="invoice_id"/>
+                <field name="amount_received"/>
+                <field name="amount_declared"/>
+                <field name="amount_paid"/>
+                <field name="payment_id"/>
+                <field name="date"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="sponsor_form_view" model="ir.ui.view">
+        <field name="name">sponsor.form_view</field>
+        <field name="model">sponsor.detail</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+
+                    <group>
+
+                        <group>
+                            <field name="sponsor_id" domain="[('is_sponsor', '=', True)]"/>
+                            <field name="customer_company_name_id" />
+                            <field name="order_id" options="{'no_create':True}"  domain="[('partner_id', '=',customer_company_name_id )]"/>
+                            <field name="invoice_id" options="{'no_create':True}" domain="[('partner_id', '=',customer_company_name_id )]"/>
+                            <field name="payment_id" options="{'no_create':True}" domain="[('partner_id', '=',customer_company_name_id )]"/>
+                        </group>
+
+                        <group>
+                            <field name="date"/>
+                            <field name="amount_received"/>
+                            <field name="amount_declared"/>
+                            <field name="amount_paid"/>
+                            <field name="expiry_date"/>
+
+                        </group>
+
+                    </group>
+
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids" widget="mail_followers"/>
+                    <field name="activity_ids" widget="mail_activity"/>
+                    <field name="message_ids" widget="mail_thread" opction="{'post_refresh':'recipients'}"/>
+                </div>
+            </form>
+        </field>
+    </record>
+
+    <record id="sponsor_sheet_pivot" model="ir.ui.view">
+        <field name="name">sponsor_sheet.pivot</field>
+        <field name="model">sponsor.detail</field>
+        <field name="arch" type="xml">
+            <pivot sample="3">
+                <field name="date" type="col"/>
+                <field name="sponsor_id" type="row"/>
+                <field name="amount_received" type="measure"/>
+                <field name="amount_declared" type="measure"/>
+                <field name="amount_paid" type="measure"/>
+            </pivot>
+        </field>
+    </record>
+
+
+    <record id="action_sponsor_view" model="ir.actions.act_window">
+        <field name="name">Sponsor Details</field>
+        <field name="res_model">sponsor.detail</field>
+        <field name="view_mode">tree,form,pivot</field>
+        <field name="context">{'create': True, 'delete': False}</field>
+
+
+    </record>
+
+
+    <menuitem
+            id="action_sponsor_detail"
+            action="action_sponsor_view"
+            name="Sponsor Details "
+            parent="account.menu_finance_payables"
+            sequence="108"/>
+
+</odoo>
