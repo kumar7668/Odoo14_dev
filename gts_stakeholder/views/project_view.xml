@@ -1,0 +1,26 @@
+<odoo>
+
+    <record id="view_project_project_inherit_form_views_stakeholders" model="ir.ui.view">
+        <field name="name">project.project.form.view.inherit</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook//page[@name='settings']" position="after">
+                <page name="stakeholder_lines" string="Stakeholders">
+                    <field name="stakeholder_ids" required="True">
+                        <tree editable="bottom">
+                            <field name="partner_id" options="{'no_create': True}"/>
+                            <field name="role_id" options="{'no_create': True}"/>
+                            <field name="department_id" options="{'no_create': True}"/>
+                            <field name="role_in_project" options="{'no_create': True}"/>
+                            <field name="type_of_stakeholder" options="{'no_create': True}"/>
+                            <field name="type_of_communication" options="{'no_create': True}"/>
+                            <field name="expectations"/>
+                        </tree>
+                    </field>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
