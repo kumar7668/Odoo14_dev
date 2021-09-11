@@ -1,0 +1,49 @@
+
+LIVE Credentials:
+https://ewaybillgst.gov.in
+09AAFCT8324E1Z9
+Geotech@123
+
+LIVE credentials for configuration
+09AAFCT8324E1Z9
+09AAFCT832_API_GEO
+Geotech@12345
+
+
+
+
+TaxPro Test credentails
++++++++++++++++++++++++++++++++++++++++++++++++++++
+https://help.taxprogsp.co.in/ewb/authentication_url___method_get_.htm?ms=AgI%3D&st=MA%3D%3D&sct=MA%3D%3D&mw=MjQw&ms=AgI%3D&st=MA%3D%3D&sct=MA%3D%3D&mw=MjQw
+
+
+URL: http://testapi.taxprogsp.co.in/ewaybillapi/dec/v1.03/
+
+
+
+05AAACG1625Q1ZK
+
+05AAACG1625Q1ZK
+
+abc123@@
+
+
+05AAACG1840M1ZR
+
+05AAACG1840M1ZR
+
+abc123@@
+
+
+Login Credentials
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+https://crm.gstefiling.co.in/Account/Login
+
+ASPID: 1622373119
+Password: Geo@12345
+
+GSTIN: 05AAACG1539P1ZH
+Username: 05AAACG1539P1ZH
+Password: abc123@@
+
+

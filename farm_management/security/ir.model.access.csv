@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_farmanimal_farmanimal,access.farmanimal.farmanimal,model_farmanimal_farmanimal,base.group_user,1,1,10
+access_disease_disease,access.disease.disease,model_disease_disease,base.group_user,1,1,10
+access_feed_feed,access.feed.feed,model_feed_feed,base.group_user,1,1,10
+access_feedrecord_feedrecord,access.feedrecord.feedrecord,model_feedrecord_feedrecord,base.group_user,1,1,10
+access_vaccinationrecord_vaccinationrecord,access.vaccinationrecord.vaccinationrecord,model_vaccinationrecord_feedrecord,base.group_user,1,1,10
+access_vaccine_vaccine,access.vaccine.vaccine,model_vaccine_vaccine,base.group_user,1,1,10

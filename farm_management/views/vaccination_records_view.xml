@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="vaccination_menu_action" model="ir.actions.act_window">
+            <field name="name">Vaccinations</field>
+            <field name="res_model">vaccinationrecord.vaccinationrecord</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="or_view_nocontent_create">Create The Vaccination Record
+
+                </p>
+            </field>           
+        </record>
+        <!--vaccination tree view-->
+        <record id="vaccination_tree_view" model="ir.ui.view">
+            <field name="name">Vaccination Tree</field>
+            <field name="model">vaccinationrecord.vaccinationrecord</field>
+            <field name="arch" type="xml">
+                <tree string="Vaccinations">
+                    <field name="vaccinated_animal"/>
+                    <field name="vaccine_name"/>
+                    <field name="vaccination_date_time"/>
+                    <field name="next_vaccination_date"/>
+                </tree>
+            </field>
+        </record>
+        <!--vaccination form view-->
+        <record id="vaccination_free_view" model="ir.ui.view">
+            <field name="name">Vaccination Form</field>
+            <field name="model">vaccinationrecords.vaccinationrecords</field>
+            <field name="arch" type="xml">
+                <form string="Vaccinations">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="vaccinated_animal"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="vaccine_name"/>
+                                <field name="vaccination_date_time"/>
+                                <field name="next_vaccination_date"/>
+                            </group>
+                        </group>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <menuitem id="vaccination_records_menu" name="Vaccination Records" 
+            parent="farm_management.farm_menu" action="vaccination_menu_action"/>
+    </data>
+</odoo>

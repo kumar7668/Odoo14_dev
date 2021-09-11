@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="feeding_menu_action" model="ir.actions.act_window">
+            <field name="name">Feeding Record</field>
+            <field name="res_model">feedrecord.feedrecord</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="or_view_nocontent_create">Create The First Feeding Record
+
+                </p>
+            </field>           
+        </record>
+        <!--Feed tree view-->
+        <record id="feed_tree_view" model="ir.ui.view">
+            <field name="name">Feeding Record Tree</field>
+            <field name="model">feedrecord.feedrecord</field>
+            <field name="arch" type="xml">
+                <tree string="Feeding Record">
+                    <field name="feed_animal"/>
+                    <field name="feed_name"/>
+                    <field name="amount"/>
+                    <field name="feed_date_time"/>
+                </tree>
+            </field>
+        </record>
+        <!--feeding form view-->
+        <record id="feeding_free_view" model="ir.ui.view">
+            <field name="name">Feeding Record Form</field>
+            <field name="model">feedrecords.feedrecords</field>
+            <field name="arch" type="xml">
+                <form string="Feeding Records">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="feed_animal"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="feed_name"/>
+                                <field name="amount"/>
+                                <field name="feed_date_time"/>
+                            </group>
+                        </group>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <menuitem id="feed_records_menu" name="Feed Records" 
+            parent="farm_management.farm_menu" action="feeding_menu_action"/>
+
+    </data>
+</odoo>

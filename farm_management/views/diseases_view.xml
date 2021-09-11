@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <record id="disease_menu_action" model="ir.actions.act_window">
+            <field name="name">Diseases</field>
+            <field name="res_model">disease.disease</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="domain">[]</field>
+            <field name="help" type="html">
+                <p class="or_view_nocontent_create">Create The Disease Record
+
+                </p>
+            </field>           
+        </record>
+        <!--disease tree view-->
+        <record id="disease_tree_view" model="ir.ui.view">
+            <field name="name">Disease Tree</field>
+            <field name="model">disease.disease</field>
+            <field name="arch" type="xml">
+                <tree string="Diseases">
+                    <field name="d_name"/>
+                    <field name="d_type"/>
+                    <field name="s_vector"/>
+                    <field name="threat_level"/>
+                    <field name="cure"/>
+                </tree>
+            </field>
+        </record>
+        <!--disease form view-->
+        <record id="disease_free_view" model="ir.ui.view">
+            <field name="name">Disease Form</field>
+            <field name="model">disease.disease</field>
+            <field name="arch" type="xml">
+                <form string="Disease">
+                    <sheet>
+                        <div class="oe_title">
+                            <h1>
+                                <field name="d_name"/>
+                            </h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="d_type"/>
+                                <field name="s_vector"/>
+                            </group>
+                            <group>
+                                <field name="threat_level"/>
+                                <field name="cure"/>
+                            </group>
+                        </group>
+                        
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <menuitem id="disease_menu" name="Diseases" 
+            parent="farm_management.farm_menu" action="disease_menu_action"/>
+    </data>
+</odoo>
