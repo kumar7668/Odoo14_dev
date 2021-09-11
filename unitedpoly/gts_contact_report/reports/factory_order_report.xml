@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--    <template id="sale_factory_order_report" inherit_id="sale.report_saleorder_document">-->
+    <template id="sale_factory_order_report">
+
+            <t t-call="web.basic_layout">
+                <t t-foreach="docs" t-as="doc">
+                <style>
+                    th, td {
+                    font-size: 10pt;
+                    }
+                    tr.noBorder td {
+                      border: 0;
+                    }
+                </style>
+                <div class="page">
+                <table class="table table-bordered" style="text-align:left;font-size:19px;border-style: solid;margin-bottom: 0px;
+                    border-width: 2px;">
+                    <h1 style="text-align:center;">Factory Order: <span t-field="doc.name"/></h1>
+                    <tr width="100">
+                        <td>
+                            <p>Mode of Shipment: <span t-field="doc.shipment_mode"/></p>
+                            <p>Product Specification Finish: <span t-field="doc.shipment_mode"/></p>
+                            <p>
+                                Etching: <span t-field="doc.shipment_mode"/>
+                            </p>
+                        </td>
+                        <td>
+                            <P>Buyer Code:-</P>
+                            <P>EXPORT SALES</P>
+                            <P>Cargo to get ready on:</P>
+                            <P>Country:</P>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <p>Poly Bag Labeling:</p>
+                            <p>Inner Carton Labeling: </p>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="6">
+                            <p>Shipping Mark: </p><br></br>
+                            <p>Master Carton</p>
+                        </td>
+
+                    </tr>
+                </table>
+
+                <div>
+                    <table class="table table-bordered" style="border-style: solid;
+                    border-width: 1px;size:100;">
+                        <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                        <thead style="display: table-row-group">
+                            <tr>
+                                <th name="th_sr_no" class="text-center"><b>Sr.<br/>No.</b></th>
+
+                                <th colspan="3" name="th_description" class="text-center"><b>Description of Goods</b></th>
+                                <th name="th_size" class="text-center"><b>Size</b></th>
+                                <th colspan="2" name="th_party's_item_code" class="text-center"><b>UPL Code
+                                </b>
+                                </th>
+                                <th colspan="2" name="th_upl_item_code" class="text-center"><b>Buyer Item
+                                    <br/>
+                                    Code</b>
+                                </th>
+                                <th name="th_quantity" class="text-center"><b>Quantity</b></th>
+                            </tr>
+
+
+                            <t t-set="test_variable" t-value="0"/>
+                            <t t-set="total_q" t-value="0"/>
+
+                            <tr class="noBorder" t-foreach="doc.order_line" t-as="line">
+                                <t t-set="test_variable" t-value="test_variable+1"/>
+                                <t t-set="total_q" t-value="total_q+line.product_uom_qty"/>
+                                <td>
+                                    <t t-esc="test_variable"/>
+                                </td>
+                                <td colspan="3">
+                                    <t t-esc="line.product_id.name"/>
+                                </td>
+                                <td>
+                                    <t t-esc="line.product_id.size"/>
+                                </td>
+                                <td colspan="2">
+                                    <t t-esc="line.product_id.upl_code"/>
+                                </td>
+                                <td colspan="2">
+                                    <t t-esc="line.product_id.upl_subcode"/>
+                                </td><td>
+                                    <t t-esc="line.product_uom_qty"/>
+                                </td>
+                            </tr>
+                        </thead>
+
+<!--                        <tbody class="sale_tbody">-->
+<!--                            <t t-set="sr_no" t-value="0"/>-->
+<!--                            <tr t-foreach="doc.get_product_categories(doc)" t-as="catagory">-->
+<!--                                <td colspan="9" name="td_name">-->
+<!--                                    <b>-->
+<!--                                        <span t-esc="catagory.name"/>-->
+<!--                                    </b>-->
+<!--                                </td>-->
+<!--                                <t t-foreach="doc.get_so_lines_category_wise(doc, catagory)" t-as="line">-->
+<!--                                    <t t-set="current_subtotal" t-value="0"/>-->
+<!--                                    <t t-set="sr_no" t-value="sr_no+1"/>-->
+
+<!--                                    <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"-->
+<!--                                       groups="account.group_show_line_subtotals_tax_excluded"/>-->
+<!--                                    <t t-set="current_subtotal" t-value="current_subtotal + line.price_total"-->
+<!--                                       groups="account.group_show_line_subtotals_tax_included"/>-->
+<!--                                    <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">-->
+
+<!--                                        <t t-if="not line.display_type">-->
+<!--                                            <td style= "border-style:none;padding: 0px;">-->
+<!--                                        <b><span t-esc="sr_no"/>.</b></td>-->
+<!--                                            <td style="border-style:none;padding: 1px;" colspan="2" name="td_name">-->
+<!--                                                <span t-field="line.product_id"/>-->
+<!--                                            </td>-->
+
+<!--                                            <td style= "border-style:none;padding: 1px;">-->
+<!--&lt;!&ndash;                                                <span t-field="line.product_id.size"/>&ndash;&gt;-->
+<!--                                            </td>-->
+
+<!--                                            <td>-->
+<!--                                                <span t-field="line.item_code"/>-->
+<!--                                            </td>-->
+<!--                                            <td class="text-center" style="padding: 1px;" name="td_upl_item_code">-->
+<!--                                                <span t-field="line.product_id.upl_code"/>-->
+<!--                                            </td>-->
+<!--                                            <td style="padding: 1px;" name="td_quantity" class="text-center">-->
+<!--                                                <span t-field="line.product_uom_qty"/> &amp;nbsp;<b>PCS</b>-->
+<!--                                                <span t-field="line.product_uom" groups="uom.group_uom"/>-->
+<!--                                            </td>-->
+
+<!--&lt;!&ndash;                                            <td style="padding: 1px;" name="td_priceunit" class="text-right">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <span t-field="line.price_unit"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </td>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <td style="padding: 1px;" name="td_subtotal"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                class="text-right o_price_total">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <span t-field="line.price_subtotal"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                      groups="account.group_show_line_subtotals_tax_excluded"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <span t-field="line.price_total"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                      groups="account.group_show_line_subtotals_tax_included"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </td>&ndash;&gt;-->
+<!--                                        </t>-->
+<!--                                        <t t-if="line.display_type == 'line_section'">-->
+<!--                                            <td name="td_section_line" colspan="99">-->
+<!--                                                <span t-field="line.name"/>-->
+<!--                                            </td>-->
+<!--                                            <t t-set="current_section" t-value="line"/>-->
+<!--                                            <t t-set="current_subtotal" t-value="0"/>-->
+<!--                                        </t>-->
+<!--                                        <t t-if="line.display_type == 'line_note'">-->
+<!--                                            <td name="td_note_line" colspan="99">-->
+<!--                                                <span t-field="line.name"/>-->
+<!--                                            </td>-->
+<!--                                        </t>-->
+<!--                                    </tr>-->
+
+<!--                                    <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">-->
+<!--                                        <tr class="is-subtotal text-right">-->
+<!--                                            <td name="td_section_subtotal" colspan="99">-->
+<!--                                                <b><strong class="mr16">Subtotal</strong></b>-->
+<!--                                                <span-->
+<!--                                                        t-esc="current_subtotal"-->
+<!--                                                        t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'-->
+<!--                                                />-->
+<!--                                            </td>-->
+<!--                                        </tr>-->
+<!--                                    </t>-->
+<!--                                </t>-->
+<!--                            </tr>-->
+<!--                        </tbody>-->
+<!--                        <t t-set="total" t-value="0" />-->
+<!--                        <ttbody>-->
+<!--                            <tr>-->
+<!--                                <td colspan="3" rowspan="1">-->
+<!--                                </td>-->
+
+<!--                                <t t-set="test_variable" t-value="0"/>-->
+<!--                                <t t-foreach="doc.order_line" t-as="l">-->
+<!--                                    <t t-set="test_variable" t-value="test_variable+l.product_uom_qty"/>-->
+<!--                                </t>-->
+<!--                                <td style="padding: 10px;">-->
+<!--                                    <b>Total</b>-->
+<!--                                </td>-->
+
+<!--                                <td>                                <b> <span t-field="doc.shipping_term"/></b>-->
+<!--</td>-->
+<!--                                <td></td>-->
+<!--                                <td class="text-center">-->
+<!--                                    <t t-esc="test_variable" t-options='{"widget": "float", "precision": 2}'/>-->
+<!--                                </td>-->
+<!--                                <td></td>-->
+<!--                                <td class="text-right">-->
+<!--                                    <span t-field="doc.amount_total"/>-->
+<!--                                    <t t-set="total" t-value="total+doc.amount_total" />-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                            <t t-if="doc.freight_charge">-->
+<!--                                <tr>-->
+<!--                                    <td style="border-style:none;" colspan="7" rowspan="1">-->
+<!--                                    </td>-->
+<!--                                    <td style="padding: 10px;">-->
+<!--                                        <b>Add Freight Charges</b>-->
+<!--                                    </td>-->
+<!--                                    <td class="text-right">-->
+<!--                                        <t t-esc="doc.freight_charge"/>-->
+<!--                                    </td>-->
+<!--                                </tr>-->
+<!--                            </t>-->
+<!--                            <t t-set="total" t-value="total+doc.freight_charge" />-->
+<!--                            <t t-if="doc.insurance_charge">-->
+<!--                            <tr>-->
+<!--                                <td  style="border-style:none;" colspan="7" rowspan="1">-->
+<!--                                </td>-->
+<!--                                <td style="padding: 10px;">-->
+<!--                                    <b>Add Insurance Charges</b>-->
+<!--                                </td>-->
+<!--                                <td class="text-right">-->
+<!--                                    <span t-field="doc.insurance_charge"/>-->
+<!--                                </td>-->
+<!--                                <t t-set="total" t-value="total+doc.insurance_charge" />-->
+<!--                            </tr>-->
+<!--                            </t>-->
+<!--                            <tr>-->
+<!--                                <td  style="border-style:none;" colspan="7" rowspan="1">-->
+<!--                                </td>-->
+<!--                                <td style="padding: 10px;">-->
+<!--                                    <b> Total (CIF):</b>-->
+<!--                                </td>-->
+<!--                                <td class="text-right">-->
+<!--                                <t t-esc="total" />-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </ttbody>-->
+<!--                        <tttttd>-->
+<!--                            <tr>-->
+<!--                                <td rowspan="4" colspan="9" style="border-style:none;">-->
+<!--                                    <div>-->
+<!--                                        <b>For United Poly Engineering. Pvt. Ltd.</b>-->
+<!--                                    </div>-->
+<!--                                    <br/>-->
+<!--                                    <br/>-->
+<!--                                    <br/>-->
+<!--                                    <div>-->
+<!--                                        <b/><strong>Authorized Signatory</strong>-->
+<!--                                    </div>-->
+<!--                                    <div class="oe_structure"/>-->
+<!--                                    <b>Validity of Price:</b>-->
+<!--                                        <span t-field="doc.payment_term_id"/>-->
+<!--                                    <p t-field="doc.note"/>-->
+<!--                                    <p><b>All Products are subject to standard tolerance</b></p>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </tttttd>-->
+                        <tr class="noBorder">
+                            <td  style="border-style:none;" colspan="8" rowspan="1">
+                                </td>
+                                <td style="padding: 10px;">
+                                    <b> Total</b>
+                                </td>
+                                <td class="text-right">
+                                <t t-esc="total_q" />
+                                </td>
+                            </tr>
+                    </table>
+<!--                                    <div class="offset-8">-->
+<!--                    <b>Total <t t-esc="total_q"/></b>-->
+<!--                </div>-->
+                    <div>
+                    <b>Date of Issue:
+                            <span style="font-size:10pt;"/>
+                    </b><br></br><br></br><br></br>
+                        <b>
+                            Revised Date Decp.:
+                        </b>
+                </div>
+                    <br></br>
+                    <br></br>
+                    <br></br>
+
+<!--                <div class="offset-8">-->
+<!--                    <b>For United Poly Engineering. Pvt. Ltd.</b>-->
+<!--                </div>-->
+                <div class="oe_structure"/>
+                <p>Prepared By Documentation Dept. &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; Verified By Marketing Dept. &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  Verified By HOD &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;  Date Recv By Production Dept
+                </p>
+<!--                <div class="mt32 ml64 mr4" name="signature">-->
+<!--                    <div class="offset-8" style="text-align:center">-->
+<!--                        <br/>-->
+<!--                        <strong>Authorized Signatory</strong>-->
+<!--                    </div>-->
+<!--                </div>-->
+                </div>
+                </div>
+                </t>
+            </t>
+    </template>
+</odoo>

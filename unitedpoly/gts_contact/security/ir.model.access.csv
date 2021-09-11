@@ -1,0 +1,5 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_contact_classification,contact_classification_all,model_contact_classification,,1,1,1,1
+access_contact_region,contact_region_all,model_contact_region,,1,1,1,1
+access_contact_exhibition,contact_exhibition_all,model_contact_exhibition,,1,1,1,1
+access_contact_last_exhibition,contact_last_exhibition_all,model_contact_last_exhibition,,1,1,1,1

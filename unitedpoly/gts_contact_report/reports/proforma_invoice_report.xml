@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="sale_report_saleorder_document_inherit" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//t[@t-call='web.external_layout']" position="replace">
+            <t t-call="web.basic_layout">
+                <style>
+                    th, td {
+                    font-size: 10pt;
+                    }
+                </style>
+                <div class="page">
+                <table class="table table-bordered" style="text-align:left;font-size:19px;border-style: solid;margin-bottom: 0px;
+                    border-width: 2px;">
+                    <tr>
+                        <td colspan="4" style="border-right: 0px;">
+                            <h5>
+                                <b><span t-field="doc.company_id.name"/></b>
+
+                            </h5>
+                            <t t-if="doc.company_id.street">
+                                <span t-field="doc.company_id.street"/>
+                            </t>
+
+                            <t t-if="doc.company_id.street2">
+                                <span t-field="doc.company_id.street2"/>
+                            </t>
+                            <br/>
+                            <span t-if="doc.company_id.city" t-field="doc.company_id.city"/>
+                            <br/>
+                            <span t-if="doc.company_id.state_id"
+                                  t-field="doc.company_id.state_id.name"/>
+                            <br/><b/>Tel:
+                            <span t-if="doc.company_id.phone"
+                                  t-field="doc.company_id.phone"/>
+
+                            <br/>
+                            <b>CIN No:</b> U74899DL1980PTC010203 <br/>
+                            <b>GSTIN No:</b>
+                            <span t-field="doc.company_id.vat"/>&amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp; &amp;nbsp;&amp;nbsp;
+                            &amp;nbsp;&amp;nbsp;
+                            <b>State Code:</b>
+                            <span t-if="doc.company_id.state_id.code"
+                                  t-field="doc.company_id.state_id.code"/>
+                        </td>
+                        <td colspan="4" align="left" style="border-right: 1px solid #E3E7E5;">
+<!--                            <h4>-->
+<!--                                <t t-if="not (env.context.get('proforma', False) or is_pro_forma)">-->
+<!--                                    <span t-if="doc.state not in ['draft','sent']">Order #</span>-->
+<!--                                    <span t-if="doc.state in ['draft','sent']">Quotation #</span>-->
+<!--                                </t>-->
+<!--                                <t t-if="env.context.get('proforma', False) or is_pro_forma">-->
+<!--                                    <b><span>PROFORMA INVOICE</span></b>-->
+<!--                                </t>-->
+<!--                            </h4>-->
+                            <h5>
+                                <b>Proforma Invoice</b>
+                            </h5>
+                            <b><span>PI No:</span></b>
+                            <span t-field="doc.name"/>
+                            <br>
+                                <b><span>Date:</span></b>
+                                <span t-field="doc.date_order"/>
+                            </br>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">
+                            <b>Consignee Name and Address:</b>
+                            <br/>
+                            <b> <span t-field="doc.partner_id.name"/></b>
+                            <br/>
+                            <span t-field="doc.partner_id.street"/>
+                            <span t-field="doc.partner_id.street2"/>
+                            <br/>
+                            <span t-field="doc.partner_id.city"/>
+                            <span t-field="doc.partner_id.state_id"/>
+                            <span t-field="doc.partner_id.zip"/>
+                            <span t-field="doc.partner_id.country_id"/>
+                            <br/>
+                            <b>Tel:</b>
+                            <span t-field="doc.partner_id.phone"/>
+
+                        </td>
+                        <td rowspan="6" colspan="4">
+                            <b>Enquiry / PO No.:</b><span t-field="doc.client_order_ref"/> <br/>
+                            <b>Mode of Shipment:</b><span t-field="doc.shipment_mode"/> <br/>
+                            <b>Port of Shipment:</b><span t-field="doc.port_of_loading"/> <br/>
+                            <b>Port of Destination:</b><span t-field="doc.place_of_delivery"/> <br/>
+                            <b>Dispatch Date/Period:</b><span t-field="doc.commitment_date"/> <br/>
+                            <b>Terms of Delivery: </b>
+                            <span t-field="doc.term_of_delivery"/>
+                            <br/>
+                            <b>Terms of Payment: </b>
+                            <span t-field="doc.payment_term_id"/>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="padding: 0px;"><b>Buyer Name and Address:</b>
+                            <br><b><span t-field="doc.partner_shipping_id.name"/></b></br>
+                            <br/>
+                            <span t-field="doc.partner_shipping_id.street"/>
+                            <span t-field="doc.partner_shipping_id.street2"/>
+                            <br/>
+                            <span t-field="doc.partner_shipping_id.city"/>
+                            <span t-field="doc.partner_shipping_id.state_id"/>
+                            <span t-field="doc.partner_shipping_id.zip"/>
+                            <span t-field="doc.partner_shipping_id.country_id"/>
+                            <br/>
+                            <b>Tel:</b>
+                            <span t-field="doc.partner_shipping_id.phone"/>
+                        </td>
+                        <!--<td  colspan="4">-->
+                            <!--&lt;!&ndash;<b>Terms of Delivery and Payment:</b><br/>&ndash;&gt;-->
+                            <!--&lt;!&ndash;<br/>&ndash;&gt;-->
+                            <!--<b>Terms of Delivery: </b>-->
+                            <!--<span t-field="doc.term_of_delivery"/>-->
+                            <!--<br/>-->
+                            <!--<b>Terms of Payment: </b>-->
+                            <!--<span t-field="doc.payment_term_id"/>-->
+                        <!--</td>-->
+                    </tr>
+                    <!--<tr>-->
+                        <!--<td colspan="5">-->
+                            <!--<b>Marks and Nos:</b><br/><span t-field="doc.partner_id.name"/>-->
+                             <!--<br/><span t-field="doc.partner_id.city"/>-->
+                            <!--&amp;nbsp;&amp;nbsp;&amp;nbsp;<b> Made In India </b>-->
+                            <!--<br/>-->
+                            <!--<b>No of Packages:</b>-->
+                            <!--<span t-field="doc.no_pkg"/>-->
+
+                        <!--</td>-->
+
+                        <!--<td  colspan="4">-->
+                            <!--<b>Terms of Delivery and Payment:</b><br/>-->
+                            <!--<br/>-->
+                            <!--<b>Terms of Delivery: </b>-->
+                            <!--<span t-field="doc.term_of_delivery"/>-->
+                            <!--<br/>-->
+                            <!--<b>Terms of Payment: </b>-->
+                            <!--<span t-field="doc.payment_term_id"/>-->
+                        <!--</td>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<th colspan="3">-->
+                             <!--<b>Pre Carriage By:</b>-->
+
+                                <!--<span t-field="doc.pre_carriege_by"/>-->
+                        <!--</th>-->
+                        <!--<th colspan="2">-->
+                            <!--<b>Place of Receipt:</b>-->
+                            <!--<span t-field="doc.company_id.city"/>-->
+                        <!--</th>-->
+                        <!--<th colspan="2">-->
+                            <!--<b>Vessel No.:</b>-->
+                            <!--<span t-field="doc.vessel_no"/>-->
+                        <!--</th>-->
+                        <!--<th style="border-right: 5px solid #E3E7E5;">-->
+                            <!--<b>Port of Loading:</b> <span t-field="doc.port_of_loading"/>-->
+                        <!--</th>-->
+                    <!--</tr>-->
+                    <!--<tr>-->
+                        <!--<th colspan="3">-->
+                             <!--<b> Port of Discharge:</b>-->
+
+                            <!--<span t-field="doc.port_of_discharge"/>-->
+                        <!--</th>-->
+                        <!--<th colspan="2">-->
+                            <!--<b>Place of Delivery:</b>-->
+
+                            <!--<span t-field="doc.place_of_delivery"/>-->
+                        <!--</th>-->
+                        <!--<th colspan="2">-->
+                           <!--<b>Country of Origin:</b><span t-field="doc.company_id.country_id"/>-->
+                        <!--</th>-->
+                        <!--<th style="border-right: 5px solid #E3E7E5;">-->
+                               <!--<b>Country of Destination:</b>-->
+                            <!--<span t-field="doc.partner_id.country_id"/>-->
+                        <!--</th>-->
+                    <!--</tr>-->
+                </table>
+
+                <div>
+                    <table class="table table-bordered" style="border-style: solid;
+                    border-width: 1px;">
+                        <!-- In case we want to repeat the header, remove "display: table-row-group" -->
+                        <thead style="display: table-row-group">
+                            <tr>
+                                <th name="th_sr_no" class="text-center"><b>Sr.<br/>No.</b></th>
+
+                                <th colspan="2" name="th_description" class="text-center"><b>Description of Goods</b></th>
+                                <th name="th_size" class="text-center"><b>Size</b></th>
+                                <th name="th_party's_item_code" class="text-center"><b>Party Item
+                                    <br/>
+                                    Code</b>
+                                </th>
+                                <th name="th_upl_item_code" class="text-center"><b>UPL Item
+                                    <br/>
+                                    Code</b>
+                                </th>
+                                <th name="th_quantity" class="text-center"><b>Quantity</b><br/>PCS/NOS</th>
+                                <th name="th_priceunit" class="text-center"><b>Unit Price</b>
+                                </th>
+                                <th name="th_subtotal" class="text-center">
+                                    <span groups="account.group_show_line_subtotals_tax_excluded"><b>Amount<br/><span t-field="doc.shipping_term"/> </b>
+                                    </span>
+                                    <span groups="account.group_show_line_subtotals_tax_included">Total
+                                        Price
+                                    </span>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody class="sale_tbody">
+                            <t t-set="sr_no" t-value="0"/>
+                            <tr t-foreach="doc.get_product_categories(doc)" t-as="catagory">
+                                <td colspan="9" name="td_name">
+                                    <b>
+                                        <span t-esc="catagory.name"/>
+                                    </b>
+                                </td>
+                                <t t-foreach="doc.get_so_lines_category_wise(doc, catagory)" t-as="line">
+                                    <t t-set="current_subtotal" t-value="0"/>
+                                    <t t-set="sr_no" t-value="sr_no+1"/>
+
+                                    <t t-set="current_subtotal" t-value="current_subtotal + line.price_subtotal"
+                                       groups="account.group_show_line_subtotals_tax_excluded"/>
+                                    <t t-set="current_subtotal" t-value="current_subtotal + line.price_total"
+                                       groups="account.group_show_line_subtotals_tax_included"/>
+                                    <tr t-att-class="'bg-200 font-weight-bold o_line_section' if line.display_type == 'line_section' else 'font-italic o_line_note' if line.display_type == 'line_note' else ''">
+
+                                        <t t-if="not line.display_type">
+                                            <td style= "border-style:none;padding: 0px;">
+                                        <b><span t-esc="sr_no"/>.</b></td>
+                                            <td style="border-style:none;padding: 1px;" colspan="2" name="td_name">
+                                                <span t-field="line.product_id"/>
+                                            </td>
+
+                                            <td style= "border-style:none;padding: 1px;">
+<!--                                                <span t-field="line.product_id.size"/>-->
+                                            </td>
+
+                                            <td>
+                                                <span t-field="line.item_code"/>
+                                            </td>
+                                            <td class="text-center" style="padding: 1px;" name="td_upl_item_code">
+                                                <span t-field="line.product_id.upl_code"/>
+                                            </td>
+                                            <td style="padding: 1px;" name="td_quantity" class="text-center">
+                                                <span t-field="line.product_uom_qty"/> &amp;nbsp;<b>PCS</b>
+                                                <span t-field="line.product_uom" groups="uom.group_uom"/>
+                                            </td>
+
+                                            <td style="padding: 1px;" name="td_priceunit" class="text-right">
+                                                <span t-field="line.price_unit"/>
+                                            </td>
+                                            <td style="padding: 1px;" name="td_subtotal"
+                                                class="text-right o_price_total">
+                                                <span t-field="line.price_subtotal"
+                                                      groups="account.group_show_line_subtotals_tax_excluded"/>
+                                                <span t-field="line.price_total"
+                                                      groups="account.group_show_line_subtotals_tax_included"/>
+                                            </td>
+                                        </t>
+                                        <t t-if="line.display_type == 'line_section'">
+                                            <td name="td_section_line" colspan="99">
+                                                <span t-field="line.name"/>
+                                            </td>
+                                            <t t-set="current_section" t-value="line"/>
+                                            <t t-set="current_subtotal" t-value="0"/>
+                                        </t>
+                                        <t t-if="line.display_type == 'line_note'">
+                                            <td name="td_note_line" colspan="99">
+                                                <span t-field="line.name"/>
+                                            </td>
+                                        </t>
+                                    </tr>
+
+                                    <t t-if="current_section and (line_last or doc.order_line[line_index+1].display_type == 'line_section')">
+                                        <tr class="is-subtotal text-right">
+                                            <td name="td_section_subtotal" colspan="99">
+                                                <b><strong class="mr16">Subtotal</strong></b>
+                                                <span
+                                                        t-esc="current_subtotal"
+                                                        t-options='{"widget": "monetary", "display_currency": doc.pricelist_id.currency_id}'
+                                                />
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </t>
+                            </tr>
+                        </tbody>
+                        <t t-set="total" t-value="0" />
+                        <ttbody>
+                            <tr>
+                                <td colspan="3" rowspan="1">
+                                </td>
+
+                                <t t-set="test_variable" t-value="0"/>
+                                <t t-foreach="doc.order_line" t-as="l">
+                                    <t t-set="test_variable" t-value="test_variable+l.product_uom_qty"/>
+                                </t>
+                                <td style="padding: 10px;">
+                                    <b>Total</b>
+                                </td>
+
+                                <td>                                <b> <span t-field="doc.shipping_term"/></b>
+</td>
+                                <td></td>
+                                <td class="text-center">
+                                    <t t-esc="test_variable" t-options='{"widget": "float", "precision": 2}'/>
+                                </td>
+                                <td></td>
+                                <td class="text-right">
+                                    <span t-field="doc.amount_total"/>
+                                    <t t-set="total" t-value="total+doc.amount_total" />
+                                </td>
+                            </tr>
+                            <t t-if="doc.freight_charge">
+                                <tr>
+                                    <td style="border-style:none;" colspan="7" rowspan="1">
+                                    </td>
+                                    <td style="padding: 10px;">
+                                        <b>Add Freight Charges</b>
+                                    </td>
+                                    <td class="text-right">
+                                        <t t-esc="doc.freight_charge"/>
+                                    </td>
+                                </tr>
+                            </t>
+                            <t t-set="total" t-value="total+doc.freight_charge" />
+                            <t t-if="doc.insurance_charge">
+                            <tr>
+                                <td  style="border-style:none;" colspan="7" rowspan="1">
+                                </td>
+                                <td style="padding: 10px;">
+                                    <b>Add Insurance Charges</b>
+                                </td>
+                                <td class="text-right">
+                                    <span t-field="doc.insurance_charge"/>
+                                </td>
+                                <t t-set="total" t-value="total+doc.insurance_charge" />
+                            </tr>
+                            </t>
+                            <tr>
+                                <td  style="border-style:none;" colspan="7" rowspan="1">
+                                </td>
+                                <td style="padding: 10px;">
+                                    <b> Total (CIF):</b>
+                                </td>
+                                <td class="text-right">
+                                <t t-esc="total" />
+                                </td>
+                            </tr>
+                        </ttbody>
+<!--                        <tttttd>-->
+<!--                            <tr>-->
+<!--                                <td rowspan="4" colspan="9" style="border-style:none;">-->
+<!--                                    <div>-->
+<!--                                        <b>For United Poly Engineering. Pvt. Ltd.</b>-->
+<!--                                    </div>-->
+<!--                                    <br/>-->
+<!--                                    <br/>-->
+<!--                                    <br/>-->
+<!--                                    <div>-->
+<!--                                        <b/><strong>Authorized Signatory</strong>-->
+<!--                                    </div>-->
+<!--                                    <div class="oe_structure"/>-->
+<!--                                    <b>Validity of Price:</b>-->
+<!--                                        <span t-field="doc.payment_term_id"/>-->
+<!--                                    <p t-field="doc.note"/>-->
+<!--                                    <p><b>All Products are subject to standard tolerance</b></p>-->
+<!--                                </td>-->
+<!--                            </tr>-->
+<!--                        </tttttd>-->
+                    </table>
+                    <div>
+                    <b>Total Amount:
+                            <span style="font-size:10pt;" t-esc="doc.num_to_word()"/>
+                    </b>
+                </div>
+
+                <div class="offset-8">
+                    <b>For United Poly Engineering. Pvt. Ltd.</b>
+                </div>
+                <div class="oe_structure"/>
+                <p>Validity Of Price: 30 Days <br/>
+                    All Products are Subject to standard tolerance
+                </p>
+                <div class="mt32 ml64 mr4" name="signature">
+                    <div class="offset-8" style="text-align:center">
+                        <br/>
+                        <strong>Authorized Signatory</strong>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>

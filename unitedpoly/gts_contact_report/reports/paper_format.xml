@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="paperformat_no_header" model="report.paperformat">
+            <field name="name">No Header: A4 low margin</field>
+            <field name="default" eval="True"/>
+            <field name="format">A4</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">10</field>
+            <field name="margin_bottom">5</field>
+            <field name="margin_left">5</field>
+            <field name="margin_right">5</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">100</field>
+        </record>
+
+        <report
+                string="Factory Order"
+                id="sale_factory_order"
+                model="sale.order"
+                report_type="qweb-pdf"
+                name="gts_contact_report.sale_factory_order_report"
+                file="gts_contact_report.sale_factory_order_report"
+                print_report_name="'Factory Order - %s' % (object.name)"
+                paperformat="gts_contact_report.paperformat_no_header"/>
+        />
+
+
+
+        <report
+                string="PRO-FORMA Invoice"
+                id="sale.action_report_pro_forma_invoice"
+                model="sale.order"
+                report_type="qweb-pdf"
+                name="sale.report_saleorder_pro_forma"
+                file="sale.report_saleorder_pro_forma"
+                print_report_name="'Proforma Invoice - %s' % (object.name)"
+                paperformat="gts_contact_report.paperformat_no_header"/>
+        />
+        <report
+                string="Invoices"
+                id="account.account_invoices"
+                model="account.move"
+                report_type="qweb-pdf"
+                name="account.report_invoice_with_payments"
+                file="account.report_invoice_with_payments"
+                print_report_name="(object._get_report_base_filename())"
+                paperformat="gts_contact_report.paperformat_no_header"/>
+        />
+        <report
+                string="Invoices without Payment"
+                id="account.account_invoices_without_payment"
+                model="account.move"
+                report_type="qweb-pdf"
+                name="account.report_invoice"
+                file="account.report_invoice"
+                print_report_name="(object._get_report_base_filename())"
+                paperformat="gts_contact_report.paperformat_no_header"/>
+        />
+
+    </data>
+</odoo>

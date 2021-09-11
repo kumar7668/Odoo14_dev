@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="contact_form_inherit" model="ir.ui.view">
+        <field name="name">res.partner.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+
+                    <field name="company_type" position="after">
+                        <h1>  <field name="customer_code"/></h1>
+                    </field>
+                    <field name="country_id" position="attributes">
+                        <attribute name="required">1</attribute>
+                    </field>
+
+            <field name="vat" position="before">
+                <field name="region_id" string="Region" readonly="1"/>
+            </field>
+            <field name="vat" position="after">
+                <field name="classification_id"/>
+                <field name="source_ids" widget="many2many_tags" required="1"/>
+            </field>
+            <xpath expr="//notebook" position="before">
+                <group string="Exhibition Details">
+                    <group>
+                        <field name="exhibition_id"/>
+                        <field name="last_exhibition_id"/>
+                    </group>
+                    <group>
+                        <field name="book_no"/>
+                        <field name="visitor_no"/>
+                    </group>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_partner_list_inherit" model="ir.ui.view">
+                <field name="name">res.partner.list.inherit</field>
+                <field name="model">res.partner</field>
+                <field name="inherit_id" ref="base.view_partner_tree"/>
+                <field name="arch" type="xml">
+                    <field name="display_name" position="before">
+                          <field name="customer_code"/>
+                    </field>
+
+                    <field name="email" position="before">
+                        <field name="classification_id"/>
+                        <field name="source_ids" widget="many2many_tags"/>
+                        <field name="exhibition_id"/>
+                    </field>
+                </field>
+        </record>
+
+
+    <record id="contact_filter_group_by" model="ir.ui.view">
+        <field name="name">res.partner.inherit</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <field name="user_id" position="after">
+                <field name="classification_id"/>
+                <field name="region_id"/>
+                <field name="country_id"/>
+                <field name="source_ids"/>
+                <field name="exhibition_id"/>
+                <!--<field name="last_exhibition_id"/>-->
+                <!--<field name="book_no"/>-->
+                <!--                  <field name="visitor_no"/>-->
+            </field>
+            <field name="user_id" position="after">
+                <field name="customer_code"/>
+            </field>
+            <group name="group_by" position="inside">
+                <filter name="classification" string="Classification" domain="[]"
+                        context="{'group_by' : 'classification_id'}"/>
+                <filter name="region" string="Region" domain="[]" context="{'group_by' : 'region_id'}"/>
+                <filter name="country" string="Country" domain="[]" context="{'group_by' : 'country_id'}"/>
+                <filter name="exhibition" string="Exhibition" domain="[]" context="{'group_by' : 'exhibition_id'}"/>
+                <!--<filter name="last exhibition" string="Last Exhibition" domain="[]"-->
+                        <!--context="{'group_by' : 'last_exhibition_id'}"/>-->
+                <!--<filter name="book no" string="Book No" domain="[]" context="{'group_by' : 'book_no'}"/>-->
+                <!--<filter name="visitor no" string="Visitor No" domain="[]" context="{'group_by' : 'visitor_no'}"/>-->
+            </group>
+        </field>
+    </record>
+
+    <record id="res_country_inherit" model="ir.ui.view">
+                <field name="name">res.country.inherit</field>
+                <field name="model">res.country</field>
+                <field name="inherit_id" ref="base.view_country_form"/>
+                <field name="arch" type="xml">
+                    <field name="code" position="after">
+                        <field name="next_no"/>
+                    </field>
+                </field>
+        </record>
+</odoo>

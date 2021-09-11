@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_template_form_inherit" model="ir.ui.view">
+        <field name="name">product.template.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <field name="categ_id" position="before">
+                <field name="upl_code" required="1"/>
+                <field name="upl_subcode"/>
+                <field name="variant"/>
+            </field>
+            <field name="company_id" position="after">
+                <field name="material_id"/>
+                <field name="size"/>
+                <field name="finish"/>
+                <field name="net_weight"/>
+            </field>
+            <field name="barcode" position="after">
+                <field name="thickness"/>
+            </field>
+            <xpath expr="//page[@name='inventory']" position="after">
+                <page string="Packaging">
+                    <group>
+                        <group>
+                            <p1 style="font-size:22px; color:#247184">Master Packaging</p1>
+                            <field name="master_packaging"/>
+                            <field name="no_of_units_per_master_pack"/>
+                            <field name="ctn_per_secondary"/>
+                            <!--                    <field name="volume"/>-->
+                            <field name="height"/>
+                            <field name="length"/>
+                            <field name="width"/>
+                            <field name="master_weight"/>
+                            <field name="master_volume"/>
+                        </group>
+                        <group>
+                            <p1 style="font-size:22px; color:#247184">Secondary Packaging</p1>
+                            <field name="secondary_packing"/>
+                            <field name="no_of_units_per_secondary_pack"/>
+                            <field name="secondary_height"/>
+                            <field name="secondary_length"/>
+                            <field name="secondary_width"/>
+                            <field name="secondary_weight"/>
+                            <field name="secondary_volume"/>
+                        </group>
+                    </group>
+                </page>
+
+
+
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_kanban_view_inherit" model="ir.ui.view">
+        <field name="name">product.template.inherited</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_kanban_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@name='product_lst_price']" position="after">
+                <div name="upl_code" class="mt-1">
+                    Upl Code:
+                    <field name="upl_code"/>
+                </div>
+                <div name="upl_subcode" class="mt-1">
+                    Upl Sub-Code:
+                    <field name="upl_subcode"/>
+                </div>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_template_filter_group_by" model="ir.ui.view">
+        <field name="name">product.template.inherit</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_search_view"/>
+        <field name="arch" type="xml">
+        <xpath expr="//field[@name='pricelist_id']" position="after">
+                    <separator/>
+                    <field name="upl_code"/>
+                    <field name="upl_subcode"/>
+                    <separator/>
+                    <filter name="upl code" string="Upl Code" domain="[]" context="{'group_by' : 'upl_code'}"/>
+                    <filter name="upl sub-code" string="Upl Sub-Code" domain="[]" context="{'group_by' : 'upl_subcode'}"/>
+                </xpath>
+        </field>
+    </record>
+</odoo>

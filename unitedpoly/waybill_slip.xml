@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_waybill_slip">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <head>
+                    <style>
+                        table,td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                        }
+                        th, td {
+                        padding: 15px;
+                        }
+                        .image {
+                        width: 180px;
+                        height: 80px;
+                        }
+                        .image1 {
+                        width: 220px;
+                        height: 100px;
+                        }
+                        .image2 {
+                        width: 220px;
+                        height: 80px;
+                        }
+                        p {
+                        font-size: 14px;
+                        }
+                        table.center {
+                        margin-left:auto;
+                        margin-right:auto;
+                        }
+                        #bottom {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        }
+                        tr.noBorder td {
+                        border: 0;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <p class="center"> FACTORY ORDER NO.</p>
+                    <table class="center">
+                        <tr>
+                            <td colspan="2">
+<!--                                <img src="${'company=%s' % doc.picking_type_id.company_id.logo}" class="image"/>-->
+<!--                                <span t-field="doc.picking_type_id.company_id.logo" t-options='{"widget": "image"}' class="image"/>-->
+                            <img t-attf-src="data:image/*;base64,{{doc.picking_type_id.company_id.logo}}" t-att-alt="doc.picking_type_id.company_id.name" class="image"/>
+                            </td>
+                            <td colspan="2">
+                                <img src="https://staging-express.delhivery.com/static/images/new_logo.png"
+                                     class="image"/>
+                            </td>
+                        </tr>
+                        <tr style="border: 0;">
+                            <th colspan="4">
+                                <img t-att-src="doc.convert_string_to_byte()" class="image1"/>
+                            </th>
+
+                        </tr>
+                        <tr height="10px">
+                            <th style="opacity: 0.5" align="left" colspan="4">
+                                <p><t t-esc="doc.r_zip"/></p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="3.5">
+                                <p>
+                                    <b>Shipping Address:</b>
+                                    <br></br>
+                                    <b>
+                                        <t t-esc="doc.cst_name"/>
+                                    </b>
+                                    <br></br>
+                                    <t t-esc="doc.cst_address"/>
+                                    <br></br>
+                                    <t t-esc="doc.cst_city"/>, <t t-esc="doc.cst_state"/>,(India)
+                                    <br></br>
+                                    <b>Pin:
+                                        <t t-esc="doc.cst_zip"/>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <t t-esc="doc.pt"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3.5">
+                                <p>Seller:
+                                    <t t-esc="doc.sname"/>
+                                    <br></br>Address:<t
+                                            t-esc="doc.sadd"/>,(India)
+                                    <br></br>
+                                    <b>Pin:
+                                        <t t-esc="doc.picking_type_id.warehouse_id.partner_id.zip"/>
+                                    </b>
+                                </p>
+                            </td>
+                            <td>
+                                <p>Dt:
+                                    <t t-esc="doc.created_date"/>
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="2">Product</th>
+                            <th colspan="0.5">Price</th>
+                            <th>
+                                <b>Total</b>
+                            </th>
+                        </tr>
+                        <tr t-foreach="doc.move_ids_without_package" t-as="line">
+                            <td colspan="2">
+                                <t t-esc="line.product_id.name"/>
+                            </td>
+                            <td colspan="0.5">₹
+                                <t t-esc="line.sale_line_id.price_total"/>
+                            </td>
+                            <td>₹
+                                <t t-esc="line.sale_line_id.price_total"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <b>Total</b>
+                            </td>
+                            <t t-set="test_variable" t-value="0"/>
+                            <t t-foreach="doc.move_ids_without_package" t-as="l">
+                                <t t-set="test_variable" t-value="test_variable+l.sale_line_id.price_total"/>
+                            </t>
+                            <td colspan="0.5">₹
+                                <t t-esc="test_variable" t-options='{"widget": "float", "precision": 2}'/>
+                            </td>
+                            <td>₹
+                                <t t-esc="test_variable" t-options='{"widget": "float", "precision": 2}'/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th colspan="4">
+                                <img t-att-src="doc.convert_string_oid_byte()" class="image2"/>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td colspan="4">
+                                <p>Return Address:<t t-esc="doc.r_add"/>,<t
+                                        t-esc="doc.r_cty"/>,<t
+                                        t-esc="doc.r_state"/>,(India),Pin:
+                                    <t t-esc="doc.r_zip"/>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </body>
+
+            </t>
+        </t>
+    </template>
+</odoo>

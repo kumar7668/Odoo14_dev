@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_see_own_contacts" model="res.groups">
+        <field name="name">See Own Contacts</field>
+    </record>
+</odoo>

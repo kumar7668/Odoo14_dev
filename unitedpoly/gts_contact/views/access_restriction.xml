@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- <record id="res_partner_no_create_contact_exhibition_form" model="ir.ui.view">
+        <field name="name">contact.exhibition.form.no.create</field>
+        <field name="model">contact.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_exhibition_form_view"/>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="attributes">
+                <attribute name="edit">false</attribute>
+                <attribute name="delete">false</attribute>
+                <attribute name="create">false</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+    <!-- <record id="res_partner_create_contact_exhibition_form" model="ir.ui.view">
+        <field name="name">contact.exhibition.form.create</field>
+        <field name="model">contact.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_exhibition_form_view"/>
+        <field name="groups_id" eval="[(4, ref('gts_contact.group_contact_create_access2'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="attributes">
+                <attribute name="edit">true</attribute>
+                <attribute name="delete">true</attribute>
+                <attribute name="create">true</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+
+    <!-- <record id="res_partner_no_create_contact_exhibition" model="ir.ui.view">
+        <field name="name">contact.exhibition.tree.no.create</field>
+        <field name="model">contact.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_exhibition_tree_view"/>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/tree" position="attributes">
+                <attribute name="edit">false</attribute>
+                <attribute name="delete">false</attribute>
+                <attribute name="create">false</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+    <!-- <record id="res_partner_create_contact_exhibition" model="ir.ui.view">
+        <field name="name">contact.exhibition.tree.create</field>
+        <field name="model">contact.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_exhibition_tree_view"/>
+        <field name="groups_id" eval="[(4, ref('gts_contact.group_contact_create_access2'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/tree" position="attributes">
+                <attribute name="edit">true</attribute>
+                <attribute name="delete">true</attribute>
+                <attribute name="create">true</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+    <!-- <record id="res_partner_no_create_contact_classification_form" model="ir.ui.view">
+        <field name="name">contact.classification.form.no.create</field>
+        <field name="model">contact.classification</field>
+        <field name="inherit_id" ref="gts_contact.contact_classification_form_view"/>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="attributes">
+                <attribute name="edit">false</attribute>
+                <attribute name="delete">false</attribute>
+                <attribute name="create">false</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+   <!--  <record id="res_partner_create_contact_classification_form" model="ir.ui.view">
+        <field name="name">contact.classification.form.create</field>
+        <field name="model">contact.classification</field>
+        <field name="inherit_id" ref="gts_contact.contact_classification_form_view"/>
+        <field name="groups_id" eval="[(4, ref('gts_contact.group_contact_create_access2'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="attributes">
+                <attribute name="edit">true</attribute>
+                <attribute name="delete">true</attribute>
+                <attribute name="create">true</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+
+    <!-- <record id="res_partner_no_create_contact_classification_tree" model="ir.ui.view">
+        <field name="name">contact.classification.tree.no.create</field>
+        <field name="model">contact.classification</field>
+        <field name="inherit_id" ref="gts_contact.contact_classification_tree_view"/>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/tree" position="attributes">
+                <attribute name="edit">false</attribute>
+                <attribute name="delete">false</attribute>
+                <attribute name="create">false</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_partner_create_contact_classification_tree" model="ir.ui.view">
+        <field name="name">contact.classification.tree.create</field>
+        <field name="model">contact.classification</field>
+        <field name="inherit_id" ref="gts_contact.contact_classification_tree_view"/>
+        <field name="groups_id" eval="[(4, ref('gts_contact.group_contact_create_access2'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/tree" position="attributes">
+                <attribute name="edit">true</attribute>
+                <attribute name="delete">true</attribute>
+                <attribute name="create">true</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="res_partner_no_create_contact_last_exhibition_form" model="ir.ui.view">
+        <field name="name">contact.last.exhibition.form.no.create</field>
+        <field name="model">contact.last.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_last_exhibition_form_view"/>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="attributes">
+                <attribute name="edit">false</attribute>
+                <attribute name="delete">false</attribute>
+                <attribute name="create">false</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_partner_create_contact_last_exhibition_form" model="ir.ui.view">
+        <field name="name">contact.last.exhibition.form.create</field>
+        <field name="model">contact.last.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_last_exhibition_form_view"/>
+        <field name="groups_id" eval="[(4, ref('gts_contact.group_contact_create_access2'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/form" position="attributes">
+                <attribute name="edit">true</attribute>
+                <attribute name="delete">true</attribute>
+                <attribute name="create">true</attribute>
+            </xpath>
+        </field>
+    </record>
+
+
+    <record id="res_partner_no_create_contact_last_exhibition_tree" model="ir.ui.view">
+        <field name="name">contact.last.exhibition.tree.no.create</field>
+        <field name="model">contact.last.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_last_exhibition_tree_view"/>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/tree" position="attributes">
+                <attribute name="edit">false</attribute>
+                <attribute name="delete">false</attribute>
+                <attribute name="create">false</attribute>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="res_partner_create_contact_last_exhibition_tree" model="ir.ui.view">
+        <field name="name">contact.last.exhibition.tree.create</field>
+        <field name="model">contact.last.exhibition</field>
+        <field name="inherit_id" ref="gts_contact.contact_last_exhibition_tree_view"/>
+        <field name="groups_id" eval="[(4, ref('gts_contact.group_contact_create_access2'))]"/>
+        <field name="arch" type="xml">
+            <xpath expr="/tree" position="attributes">
+                <attribute name="edit">true</attribute>
+                <attribute name="delete">true</attribute>
+                <attribute name="create">true</attribute>
+            </xpath>
+        </field>
+    </record> -->
+
+    <record id="res_partner_no_create_contact_form" model="ir.ui.view">
+        <field name="name">res.partner.form.no.create</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="groups_id" eval="[(4, ref('base.group_user'))]"/>
+        <field name="arch" type="xml">
+            <field name="exhibition_id" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </field>
+            <field name="last_exhibition_id" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </field>
+            <field name="classification_id" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </field>
+            <field name="source_ids" position="attributes">
+                <attribute name="readonly">1</attribute>
+            </field>
+        </field>
+    </record>
+
+
+    <record id="res_partner_create_contact_form" model="ir.ui.view">
+        <field name="name">res.partner.form.create</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="groups_id" eval="[(4, ref('gts_contact.group_contact_create_access2'))]"/>
+        <field name="arch" type="xml">
+            <field name="exhibition_id" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </field>
+            <field name="last_exhibition_id" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </field>
+            <field name="classification_id" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </field>
+            <field name="source_ids" position="attributes">
+                <attribute name="readonly">0</attribute>
+            </field>
+        </field>
+    </record>
+</odoo>
+

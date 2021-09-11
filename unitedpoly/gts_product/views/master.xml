@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<!--    <record id="product_upl_code_tree_view" model='ir.ui.view'>-->
+<!--        <field name="name">product.upl.code.tree</field>-->
+<!--        <field name="model">product.upl.code</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree>-->
+<!--                <field name="name"/>-->
+<!--                <field name="code"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--    <record id="product_upl_code_form_view" model='ir.ui.view'>-->
+<!--        <field name="name">product.upl.code.form</field>-->
+<!--        <field name="model">product.upl.code</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="Upl Code">-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                        <field name="name"/>-->
+<!--                        </group>-->
+<!--                        <group>-->
+<!--                        <field name="code"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--    <record id="action_product_upl_code" model="ir.actions.act_window">-->
+<!--        <field name="name">Upl Code</field>-->
+<!--        <field name="res_model">product.upl.code</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        <field name="target">current</field>-->
+<!--        <field name="help" type="html">-->
+<!--            <p class="o_view_nocontent_smiling_face">-->
+<!--                Create Upl code....-->
+<!--            </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+
+<!--    <record id="product_upl_subcode_tree_view" model='ir.ui.view'>-->
+<!--        <field name="name">product.upl.subcode.tree</field>-->
+<!--        <field name="model">product.upl.subcode</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <tree>-->
+<!--                <field name="name"/>-->
+<!--            </tree>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--    <record id="product_upl_subcode_form_view" model='ir.ui.view'>-->
+<!--        <field name="name">product.upl.subcode.form</field>-->
+<!--        <field name="model">product.upl.subcode</field>-->
+<!--        <field name="arch" type="xml">-->
+<!--            <form string="Upl Code">-->
+<!--                <sheet>-->
+<!--                    <group>-->
+<!--                        <group>-->
+<!--                        <field name="name"/>-->
+<!--                        </group>-->
+<!--                    </group>-->
+<!--                </sheet>-->
+<!--            </form>-->
+<!--        </field>-->
+<!--    </record>-->
+<!--    <record id="action_product_upl_subcode" model="ir.actions.act_window">-->
+<!--        <field name="name">Upl Sub-Code</field>-->
+<!--        <field name="res_model">product.upl.subcode</field>-->
+<!--        <field name="view_mode">tree,form</field>-->
+<!--        <field name="help" type="html">-->
+<!--            <p class="o_view_nocontent_smiling_face">-->
+<!--                Create Upl sub-code....-->
+<!--            </p>-->
+<!--        </field>-->
+<!--    </record>-->
+
+
+    <record id="product_material_tree_view" model='ir.ui.view'>
+        <field name="name">product.material.tree</field>
+        <field name="model">product.material</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="product_material_form_view1" model='ir.ui.view'>
+        <field name="name">product.material.form</field>
+        <field name="model">product.material</field>
+        <field name="arch" type="xml">
+            <form string="Material">
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_product_material" model="ir.actions.act_window">
+        <field name="name">Material</field>
+        <field name="res_model">product.material</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Material....
+            </p>
+        </field>
+    </record>
+<!--        <menuitem id="menu_upl_code_id" name="Upl Code"-->
+<!--            parent="stock.menu_stock_config_settings"-->
+<!--            action="action_product_upl_code"/>-->
+
+<!--    <menuitem id="menu_product_upl_subcode_id" name="Upl Sub-Code"-->
+<!--            parent="stock.menu_stock_config_settings"-->
+<!--            action="action_product_upl_subcode"/>-->
+
+    <menuitem id="menu_product_material_id" name="Material"
+            parent="stock.menu_stock_config_settings"
+            action="action_product_material"/>
+
+</odoo>

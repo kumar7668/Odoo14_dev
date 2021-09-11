@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="contact_classification_tree_view" model='ir.ui.view'>
+        <field name="name">contact.classification.tree</field>
+        <field name="model">contact.classification</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="contact_classification_form_view" model='ir.ui.view'>
+        <field name="name">contact.classification.form</field>
+        <field name="model">contact.classification</field>
+        <field name="arch" type="xml">
+            <form string="Customer Classification">
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_contact_classification" model="ir.actions.act_window">
+        <field name="name">Customer Classification</field>
+        <field name="res_model">contact.classification</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create region....
+            </p>
+        </field>
+    </record>
+
+
+    <record id="contact_region_tree_view" model='ir.ui.view'>
+        <field name="name">contact.region.tree</field>
+        <field name="model">contact.region</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="description"/>
+            </tree>
+        </field>
+    </record>
+    <record id="contact_region_form_view" model='ir.ui.view'>
+        <field name="name">contact.region.form</field>
+        <field name="model">contact.region</field>
+        <field name="arch" type="xml">
+            <form string="appointment">
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="name" required="1"/>
+                        </group>
+                        <group>
+                        <field name="description"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_contact_region" model="ir.actions.act_window">
+        <field name="name">Region</field>
+        <field name="res_model">contact.region</field>
+        <field name="view_mode">tree,form</field>
+        <field name="target">current</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create region....
+            </p>
+        </field>
+    </record>
+
+    <record id="contact_exhibition_tree_view" model='ir.ui.view'>
+        <field name="name">contact.exhibition.tree</field>
+        <field name="model">contact.exhibition</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="contact_exhibition_form_view" model='ir.ui.view'>
+        <field name="name">contact.exhibition.form</field>
+        <field name="model">contact.exhibition</field>
+        <field name="arch" type="xml">
+            <form string="appointment">
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="name" required="1"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_contact_exhibition" model="ir.actions.act_window">
+        <field name="name">Exhibition</field>
+        <field name="res_model">contact.exhibition</field>
+        <field name="view_mode">tree,form</field>
+<!--        <field name="target">current</field>-->
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Exhibition....
+            </p>
+        </field>
+    </record>
+
+    <record id="contact_last_exhibition_tree_view" model='ir.ui.view'>
+        <field name="name">contact.last.exhibition.tree</field>
+        <field name="model">contact.last.exhibition</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+            </tree>
+        </field>
+    </record>
+    <record id="contact_last_exhibition_form_view" model='ir.ui.view'>
+        <field name="name">contact.last.exhibition.form</field>
+        <field name="model">contact.last.exhibition</field>
+        <field name="arch" type="xml">
+            <form string="appointment">
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="name"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+    <record id="action_contact_last_exhibition" model="ir.actions.act_window">
+        <field name="name">Last Exhibition</field>
+        <field name="res_model">contact.last.exhibition</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Last Exhibition....
+            </p>
+        </field>
+    </record>
+<!--    <menuitem id="res_partner_menu_config"-->
+<!--        name="Configuration"-->
+<!--        parent="menu_contacts"-->
+<!--        groups="base.group_system"-->
+<!--        sequence="2"/>-->
+
+        <menuitem id="mennu_region_id" name="Region"
+            parent="contacts.menu_localisation"
+            action="action_contact_region"/>
+
+    <menuitem id="mennu_exhibition_id" name="Exhibition"
+            parent="contacts.res_partner_menu_config"
+            action="action_contact_exhibition"/>
+
+    <menuitem id="mennu_last_exhibition_id" name="Last Exhibition"
+            parent="contacts.res_partner_menu_config"
+            action="action_contact_last_exhibition"/>
+
+    <menuitem id="mennu_customer_classification_id" name="Customer Classification"
+            parent="contacts.res_partner_menu_config"
+            action="action_contact_classification"/>
+</odoo>
