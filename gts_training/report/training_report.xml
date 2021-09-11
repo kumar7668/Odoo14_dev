@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_training_slip">
+        <t t-call="web.html_container">
+            <t t-foreach="docs" t-as="doc">
+                <head>
+                    <style>
+                        table,td {
+                        border: 1px solid black;
+                        border-collapse: collapse;
+                        }
+                        th, td {
+                        padding: 15px;
+                        }
+                        .image {
+                        width: 180px;
+                        height: 80px;
+                        }
+                        .image1 {
+                        width: 220px;
+                        height: 100px;
+                        }
+                        .image2 {
+                        width: 220px;
+                        height: 80px;
+                        }
+                        p {
+                        font-size: 14px;
+                        }
+                        table.center {
+                        margin-left:auto;
+                        margin-right:auto;
+                        }
+                        #bottom {
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        }
+                        tr.noBorder td {
+                        border: 0;
+                        }
+                    </style>
+                </head>
+
+                <body>
+                    <p> Hello THis is Training report </p>
+                    <h1> <t t-esc="doc.name"/></h1>
+                    <h1> <t t-esc="doc.address"/></h1>
+                    <h1> <t t-esc="doc.age"/></h1>
+                    <h1> <t t-esc="doc.amount"/></h1>
+                    <h1> <t t-esc="doc.gender"/></h1>
+                    <h1> <t t-esc="doc.salary_id.name"/></h1>
+                    <h1> <t t-esc="doc.salary_id.description"/></h1>
+                </body>
+
+            </t>
+        </t>
+    </template>
+</odoo>

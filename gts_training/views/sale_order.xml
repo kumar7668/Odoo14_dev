@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_order_inherit" model="ir.ui.view">
+        <field name="name">sale.order.inherit</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//field[@name='payment_term_id']" position="after">
+                <field name="custom_field"/>
+            </xpath>
+            <xpath expr="//notebook//page[@name='other_information']" position="after">
+                <page string="Deepak" name="name_d">
+                    <filed name="custom_field"/>
+                </page>
+            </xpath>
+
+            <xpath expr="//button[@name='action_confirm']" position="after">
+                <button name="start_button" string="Sonu" type="object" class="btn-primary" attrs="{'invisible': [('state', 'not in', 'sent')]}"/>
+            </xpath>
+
+<!--            <field name="payment_term_id" position="before">-->
+<!--                <field name="custom_field"/>-->
+<!--            </field>-->
+<!--            <xpath expr="//button[@name='action_confirm'][2]" position="attributes">-->
+<!--                <attribute name="attrs">{'invisible': [('state', 'not in', ['preforma'])]}</attribute>-->
+<!--            </xpath>-->
+<!--            <xpath expr="//button[@name='action_quotation_send'][1]" position="replace">-->
+<!--                <button name="action_quotation_send" string="Send by Email" type="object" states="preforma" class="btn-primary"/>-->
+<!--            </xpath>-->
+        </field>
+    </record>
+</odoo>

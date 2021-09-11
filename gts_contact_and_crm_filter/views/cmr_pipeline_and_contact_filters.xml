@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit2" model="ir.ui.view">
+        <field name="name">res_partner.inherit2</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search/group" position="inside">
+                <filter name="function" string="Job Position" context="{'group_by': 'function'}"/>
+            </xpath>
+
+            <xpath expr="//search" position="inside">
+                   <field name="mobile"
+                        filter_domain="[ ('mobile', 'ilike', self)]"/>
+                    <field name="website" string="Website" filter_domain="[('website','ilike', self)]"/>
+                    <field name="phone" filter_domain="[('phone', 'ilike', self)]"/>
+            </xpath>
+
+        </field>
+    </record>
+
+     <record id="view_crm_form_inherit2" model="ir.ui.view">
+        <field name="name">crm.lead.form_inherit</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref='crm.view_crm_case_opportunities_filter'/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//search" position="inside">
+                <separator/>
+                    <field name="email_from" string="Email Id" filter_domain="[('email_from','ilike', self)]"/>
+            </xpath>
+            </field>
+    </record>
+
+
+
+</odoo>
+
+

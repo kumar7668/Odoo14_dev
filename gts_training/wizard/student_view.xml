@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="training_wizard_form_view" model='ir.ui.view'>
+        <field name="name">student.student.form</field>
+        <field name="model">student.student</field>
+        <field name="arch" type="xml">
+            <form string="Student">
+                <sheet>
+                <group>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="text"/>
+                    </group>
+                </group>
+                </sheet>
+
+                <footer>
+                    <button name="create_student_record" string="Create Record" type="object" class="oe_highlight"
+                           />
+                    <button string="Cancle" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+
+<!--     <record id="student_action_wizard" model="ir.actions.act_window">-->
+<!--            <field name="name">Student</field>-->
+<!--            <field name="res_model">student.student</field>-->
+<!--            <field name="view_mode">form</field>-->
+<!--            <field name="target">new</field>-->
+<!--        </record>-->
+
+
+    <act_window name="Student Wizard"
+                id="action_download_doc"
+                res_model="student.student"
+                binding_model="geo.tech"
+                binding_views="list"
+                view_mode="form"
+                target="new"/>
+</odoo>

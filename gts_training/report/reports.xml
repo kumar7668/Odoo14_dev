@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <report
+            id="report_training_demo"
+            model="geo.tech"
+            string="Training Report"
+            report_type="qweb-pdf"
+            name="gts_training.report_training_slip"
+            file="gts_training.report_training_slip"
+            />
+
+    <report
+            id="report_training_demo1"
+            model="geo.tech"
+            string="Training Report2"
+            report_type="qweb-pdf"
+            name="gts_training.report_training_slip"
+            file="gts_training.report_training_slip"
+            />
+</odoo>

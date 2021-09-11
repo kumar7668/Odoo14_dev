@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_partner_form_inherit" model="ir.ui.view">
+        <field name="name">res_partner.inherit</field>
+        <field name="model">res.partner</field>
+
+        <field name="inherit_id" ref="view_res_partner_filter"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search/group" position="inside">
+            <search string="Search Partner">
+                    <field name="name"
+                        filter_domain="['|', '|', ('display_name', 'ilike', self), ('ref', '=', self), ('email', 'ilike', self)]"/>
+
+                    <field name="email" filter_domain="[('email', 'ilike', self)]"/>
+                    <field name="phone" filter_domain="['|', ('phone', 'ilike', self), ('mobile', 'ilike', self)]"/>
+
+                    <separator/>
+                    <filter string="Individuals" name="type_person" domain="[('is_company', '=', False)]"/>
+                    <filter string="Companies" name="type_company" domain="[('is_company', '=', True)]"/>
+                    <separator/>
+                    <filter string="Archived" name="inactive" domain="[('active', '=', False)]"/>
+                    <separator/>
+                    <group expand="0" name="group_by" string="Group By">
+                        <filter name="group_country" string="Country" context="{'group_by': 'country_id'}"/>
+                    </group>
+                </search>
+           </xpath>
+
+            </field>
+    </record>
+
+</odoo>
+
+

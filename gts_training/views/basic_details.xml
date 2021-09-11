@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="training_tree_view" model='ir.ui.view'>
+        <field name="name">geo.tech.tree</field>
+        <field name="model">geo.tech</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="age"/>
+                <field name="gender"/>
+                <field name="address"/>
+                <field name="amount"/>
+                <field name="working"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="training_form_view" model='ir.ui.view'>
+        <field name="name">geo.tech.form</field>
+        <field name="model">geo.tech</field>
+        <field name="arch" type="xml">
+            <form string="Training">
+                <header>
+                    <button name="salary_create" string="Create Salary" type="object" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                        <field name="title"/>
+                        <field name="name"/>
+                        </group>
+                        <group>
+                            <field name="age"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                        <field name="address"/>
+                        </group>
+                        <group>
+                            <field name="gender"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                        <field name="amount"/>
+                        </group>
+                        <group>
+                            <field name="working"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="salary_id"/>
+                        </group>
+                        <group>
+                            <field name="salary_ids" widget="many2many_tags"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="add"/>
+                        </group>
+                        <group>
+                            <field name="sub"/>
+                        </group>
+                        <group>
+                            <field name="total"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+
+    <record id="action_training" model="ir.actions.act_window">
+        <field name="name">Training</field>
+        <field name="res_model">geo.tech</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                Create Training details ....
+            </p>
+        </field>
+    </record>
+
+
+    <menuitem id="training_main_menu" name="Training" sequence="3"/>
+
+    <menuitem id="basic_details_training" name="Basic Details" parent="training_main_menu"
+              action="action_training"/>
+</odoo>
